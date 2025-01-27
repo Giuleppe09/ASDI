@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Shift_register_bidirezionale.srcs/sources_1/new/Behavioral.vhd" \
+"../../../../Shift_register_bidirezionale.srcs/sim_1/new/Behavioral_tb.vhd" \
+
+# Do not sort compile order
+nosort
