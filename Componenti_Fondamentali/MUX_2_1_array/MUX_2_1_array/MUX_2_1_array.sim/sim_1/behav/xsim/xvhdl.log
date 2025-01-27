@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/MUX_2_1_array/MUX_2_1_array.srcs/sources_1/new/mux_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_2_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/MUX_2_1_array/MUX_2_1_array.srcs/sim_1/new/mux_2_1_array_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_2_1_tb'
