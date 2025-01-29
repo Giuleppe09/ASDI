@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Esercizio1_2.srcs/sources_1/imports/new/Demux_1_4.vhd" \
+"../../../../Esercizio1_2.srcs/sources_1/new/RETE_16_4.vhd" \
+"../../../../Esercizio1_2.srcs/sources_1/imports/new/mux_16_1.vhd" \
+"../../../../Esercizio1_2.srcs/sources_1/imports/1-multiplexer21_dataflow/mux_2_1.vhd" \
+"../../../../Esercizio1_2.srcs/sources_1/imports/new/mux_4_1.vhd" \
+"../../../../Esercizio1_2.srcs/sim_1/new/RETE_16_4_tb.vhd" \
+
+# Do not sort compile order
+nosort

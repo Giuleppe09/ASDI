@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a12ticsg325-1L" LaunchTime="1732031274">
+  <File Type="ROUTE-PWR" Name="RETE_16_4_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="RETE_16_4.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="RETE_16_4_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="RETE_16_4_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="RETE_16_4.msk"/>
+  <File Type="ROUTE-CLK" Name="RETE_16_4_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="RETE_16_4.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="RETE_16_4_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="RETE_16_4.bit"/>
+  <File Type="BG-DRC" Name="RETE_16_4.drc"/>
+  <File Type="BG-BGN" Name="RETE_16_4.bgn"/>
+  <File Type="BG-BIN" Name="RETE_16_4.bin"/>
+  <File Type="BITSTR-RBT" Name="RETE_16_4.rbt"/>
+  <File Type="BITSTR-NKY" Name="RETE_16_4.nky"/>
+  <File Type="BITSTR-BMM" Name="RETE_16_4_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="RETE_16_4.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="RETE_16_4_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="RETE_16_4.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="RETE_16_4.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="RETE_16_4_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="RETE_16_4.hwdef"/>
+  <File Type="PLACE-IO" Name="RETE_16_4_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="RETE_16_4_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="RETE_16_4_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="RETE_16_4_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="RETE_16_4_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="RETE_16_4_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="RETE_16_4_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="RETE_16_4_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="RETE_16_4_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="RETE_16_4_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="RETE_16_4_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="RETE_16_4_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="RETE_16_4_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="RETE_16_4_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="RETE_16_4_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="RETE_16_4_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="RETE_16_4_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="RETE_16_4_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="RETE_16_4_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="RETE_16_4_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="RETE_16_4_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="RETE_16_4_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="RETE_16_4_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="RETE_16_4_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="RETE_16_4_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="RETE_16_4_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="RETE_16_4_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="RETE_16_4_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="RETE_16_4_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="RETE_16_4_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="RETE_16_4_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="RETE_16_4_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RETE_16_4_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="RETE_16_4_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RETE_16_4_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="RETE_16_4.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="RETE_16_4_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="RETE_16_4_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="RETE_16_4.rcfi"/>
+  <File Type="CFI_FILE" Name="RETE_16_4.cfi"/>
+  <File Type="RNPI_FILE" Name="RETE_16_4.rnpi"/>
+  <File Type="NPI_FILE" Name="RETE_16_4.npi"/>
+  <File Type="RBD_FILE" Name="RETE_16_4.rbd"/>
+  <File Type="ROUTE-RQS" Name="RETE_16_4_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="RETE_16_4_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/Demux_1_4.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../DEMUX1_4/DEMUX1_4.srcs/sources_1/new/Demux_1_4.vhd"/>
+        <Attr Name="ImportTime" Val="1730153038"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mux_16_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../MUX_16_1/MUX_16_1.srcs/sources_1/new/mux_16_1.vhd"/>
+        <Attr Name="ImportTime" Val="1731932512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/1-multiplexer21_dataflow/mux_2_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../MUX_16_1/MUX_16_1.srcs/sources_1/imports/sources_1/imports/1-multiplexer21_dataflow/mux_2_1.vhd"/>
+        <Attr Name="ImportTime" Val="1731932512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mux_4_1.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../MUX_16_1/MUX_16_1.srcs/sources_1/imports/sources_1/new/mux_4_1.vhd"/>
+        <Attr Name="ImportTime" Val="1731932512"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RETE_16_4.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RETE_16_4"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/RETE_16_4.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

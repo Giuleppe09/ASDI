@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Esercizio1_2/Esercizio1_2.srcs/sources_1/imports/new/mux_16_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_16_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Esercizio1_2/Esercizio1_2.srcs/sources_1/imports/1-multiplexer21_dataflow/mux_2_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_2_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Esercizio1_2/Esercizio1_2.srcs/sim_1/new/RETE_16_4_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RETE_16_4_tb'

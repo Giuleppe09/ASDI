@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RETE_16_4_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RETE_16_4_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="97.734 ns"></ZoomStartTime>
+      <ZoomEndTime time="222.335 ns"></ZoomEndTime>
+      <Cursor1Time time="219.934 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="188"></NameColumnWidth>
+      <ValueColumnWidth column_width="113"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/RETE_16_4_tb/A_tb" type="array">
+      <obj_property name="ElementShortName">A_tb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">A_tb[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RETE_16_4_tb/S_mux_tb" type="array">
+      <obj_property name="ElementShortName">S_mux_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_mux_tb[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RETE_16_4_tb/S_demux_tb" type="array">
+      <obj_property name="ElementShortName">S_demux_tb[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_demux_tb[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RETE_16_4_tb/Y_tb" type="array">
+      <obj_property name="ElementShortName">Y_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_tb[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+</wave_config>
