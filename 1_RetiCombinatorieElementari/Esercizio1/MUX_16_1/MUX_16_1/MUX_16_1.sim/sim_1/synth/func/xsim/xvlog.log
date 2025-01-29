@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/MUX_16_1/MUX_16_1.sim/sim_1/synth/func/xsim/mux_16_1_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_16_1
+INFO: [VRFC 10-311] analyzing module glbl

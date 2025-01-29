@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Nov 19 16:30:09 2024
+# Process ID: 31272
+# Current directory: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/MUX_16_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31080 C:\Users\ladyc\Desktop\ASDI\VIVADO-PROJECTS\MUX_16_1\MUX_16_1.xpr
+# Log file: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/MUX_16_1/vivado.log
+# Journal file: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/MUX_16_1\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/MUX_16_1/MUX_16_1.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 11
+wait_on_run synth_1
+open_run synth_1 -name synth_1
