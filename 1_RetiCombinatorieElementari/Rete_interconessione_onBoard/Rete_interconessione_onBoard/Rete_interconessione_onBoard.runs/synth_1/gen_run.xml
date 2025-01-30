@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1738161183" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/Rete_board.dcp">
   <File Type="PA-TCL" Name="Rete_board.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Rete_board_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Rete_board_reports.tcl"/>
   <File Type="RDS-RDS" Name="Rete_board.vds"/>
   <File Type="RDS-UTIL" Name="Rete_board_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Rete_board_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Rete_board.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Rete_board_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Rete_board_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Control_unit.vhd">

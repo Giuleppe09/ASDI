@@ -4,67 +4,60 @@
   <File Type="PA-TCL" Name="Rete_board.tcl"/>
   <File Type="ROUTE-PWR-SUM" Name="Rete_board_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Rete_board_reports.tcl"/>
-  <File Type="OPT-RQA-PB" Name="Rete_board_rqa_opted.pb"/>
+  <File Type="BITSTR-MSK" Name="Rete_board.msk"/>
+  <File Type="ROUTE-CLK" Name="Rete_board_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Rete_board.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Rete_board_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="Rete_board.bit"/>
+  <File Type="BG-DRC" Name="Rete_board.drc"/>
+  <File Type="BG-BGN" Name="Rete_board.bgn"/>
+  <File Type="BG-BIN" Name="Rete_board.bin"/>
+  <File Type="BITSTR-RBT" Name="Rete_board.rbt"/>
+  <File Type="BITSTR-NKY" Name="Rete_board.nky"/>
+  <File Type="BITSTR-BMM" Name="Rete_board_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="Rete_board.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Rete_board_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Rete_board_timing_summary_init.rpt"/>
-  <File Type="OPT-TIMING" Name="Rete_board_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Rete_board_opt.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Rete_board_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="Rete_board.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Rete_board.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="Rete_board_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Rete_board.hwdef"/>
-  <File Type="PWROPT-DCP" Name="Rete_board_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Rete_board_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Rete_board_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="Rete_board_placed.dcp"/>
   <File Type="PLACE-IO" Name="Rete_board_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Rete_board_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Rete_board_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Rete_board_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Rete_board_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Rete_board_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Rete_board_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="Rete_board.bin"/>
-  <File Type="PLACE-TIMING" Name="Rete_board_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="Rete_board_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="Rete_board_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="Rete_board_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="Rete_board.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Rete_board_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="Rete_board_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Rete_board_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="Rete_board.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="Rete_board_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="Rete_board_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="Rete_board_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="Rete_board_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Rete_board_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Rete_board_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="Rete_board_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="Rete_board_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Rete_board_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Rete_board_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="Rete_board_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Rete_board_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Rete_board_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Rete_board_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="Rete_board_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Rete_board_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Rete_board_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Rete_board_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Rete_board_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Rete_board_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="Rete_board_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="Rete_board_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Rete_board_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Rete_board_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Rete_board_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="Rete_board_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Rete_board_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Rete_board_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Rete_board_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Rete_board_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Rete_board_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Rete_board_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Rete_board_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Rete_board_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Rete_board_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Rete_board_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="Rete_board.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Rete_board_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Rete_board_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="Rete_board.nky"/>
-  <File Type="BITSTR-BMM" Name="Rete_board_bd.bmm"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Rete_board_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Rete_board_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Rete_board_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="Rete_board.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="Rete_board_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="Rete_board_pld.pdi"/>
@@ -73,13 +66,6 @@
   <File Type="RNPI_FILE" Name="Rete_board.rnpi"/>
   <File Type="NPI_FILE" Name="Rete_board.npi"/>
   <File Type="RBD_FILE" Name="Rete_board.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Rete_board.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="Rete_board.sysdef"/>
-  <File Type="BG-BGN" Name="Rete_board.bgn"/>
-  <File Type="BG-DRC" Name="Rete_board.drc"/>
-  <File Type="RDI-RDI" Name="Rete_board.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="ROUTE-RQS" Name="Rete_board_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="Rete_board_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
