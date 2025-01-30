@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Jan 29 15:35:33 2025
+# Process ID: 2524
+# Current directory: C:/Users/umber/OneDrive/Desktop/AsDi/1_RetiCombinatorieElementari/Rete_interconessione_onBoard/Rete_interconessione_onBoard/Rete_interconessione_onBoard.runs/impl_1
+# Command line: vivado.exe -log Rete_board.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Rete_board.tcl -notrace
+# Log file: C:/Users/umber/OneDrive/Desktop/AsDi/1_RetiCombinatorieElementari/Rete_interconessione_onBoard/Rete_interconessione_onBoard/Rete_interconessione_onBoard.runs/impl_1/Rete_board.vdi
+# Journal file: C:/Users/umber/OneDrive/Desktop/AsDi/1_RetiCombinatorieElementari/Rete_interconessione_onBoard/Rete_interconessione_onBoard/Rete_interconessione_onBoard.runs/impl_1\vivado.jou
+# Running On: LAPTOP-AOM7HOQR, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 2, Host memory: 8316 MB
+#-----------------------------------------------------------
+source Rete_board.tcl -notrace

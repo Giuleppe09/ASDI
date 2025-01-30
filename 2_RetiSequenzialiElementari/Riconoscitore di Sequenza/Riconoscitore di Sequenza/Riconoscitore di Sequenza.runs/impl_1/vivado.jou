@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Nov 27 12:05:39 2024
+# Process ID: 25564
+# Current directory: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore di Sequenza/Riconoscitore di Sequenza.runs/impl_1
+# Command line: vivado.exe -log RICONOSCITORE_DI_SEQ.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RICONOSCITORE_DI_SEQ.tcl -notrace
+# Log file: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore di Sequenza/Riconoscitore di Sequenza.runs/impl_1/RICONOSCITORE_DI_SEQ.vdi
+# Journal file: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore di Sequenza/Riconoscitore di Sequenza.runs/impl_1\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
+#-----------------------------------------------------------
+source RICONOSCITORE_DI_SEQ.tcl -notrace
