@@ -1,139 +1,102 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 27.11.2024
--- Design Name: 
--- Module Name: tb_riconoscitore - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: Testbench per il riconoscitore di sequenze
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.std_logic_unsigned.ALL;
 
-library IEEE;
-use IEEE.Std_logic_1164.all;
-use IEEE.Numeric_Std.all;
+ENTITY TB_RICONOSCITORE_DI_SEQ IS
+END TB_RICONOSCITORE_DI_SEQ;
 
-entity tb_riconoscitore is
-end;
-
-architecture test of tb_riconoscitore is
-
-    -- Component da testare
-    component riconoscitore_di_seq
-        port(
-            CLK : in std_logic;
-            RST : in std_logic;
-            i   : in std_logic;
-            M   : in std_logic;
-            Y   : out std_logic;
-            state : out std_logic_vector(3 downto 0)  -- Debug opzionale
+ARCHITECTURE behavior OF TB_RICONOSCITORE_DI_SEQ IS 
+    
+    -- Component della UUT (Unit Under Test)
+    COMPONENT RICONOSCITORE_DI_SEQ
+    PORT(
+         i    : IN  std_logic;
+         RST  : IN  std_logic;
+         CLK  : IN  std_logic;
+         M    : IN  std_logic;
+         Y    : OUT std_logic;
+         state: OUT std_logic_vector(3 downto 0)
         );
-    end component;
-
-    -- Segnali locali per la simulazione
-    signal CLK    : std_logic := '0';
-    signal RST    : std_logic := '0';
-    signal i      : std_logic := '0';
-    signal M      : std_logic := '0';
-    signal Y      : std_logic;
-    signal state  : std_logic_vector(3 downto 0);
-
-    -- Clock a 50 MHz (periodo 20 ns)
-    constant clk_period : time := 20 ns;
-
-begin
-
-    -- Instanziazione del riconoscitore
-    uut: riconoscitore_di_seq
-        port map(
-            CLK => CLK,
-            RST => RST,
-            i   => i,
-            M   => M,
-            Y   => Y,
-            state => state
+    END COMPONENT;
+    
+    -- Segnali per la simulazione
+    SIGNAL i    : std_logic := '0';
+    SIGNAL RST  : std_logic := '0';
+    SIGNAL CLK  : std_logic := '0';
+    SIGNAL M    : std_logic := '0';
+    SIGNAL Y    : std_logic;
+    SIGNAL state: std_logic_vector(3 downto 0);
+    
+    -- Periodo del clock
+    CONSTANT CLK_PERIOD : time := 10 ns;
+    
+BEGIN
+    
+    -- Istanza della UUT
+    uut: RICONOSCITORE_DI_SEQ PORT MAP (
+          i    => i,
+          RST  => RST,
+          CLK  => CLK,
+          M    => M,
+          Y    => Y,
+          state=> state
         );
-
+    
     -- Processo per generare il clock
-    clock_gen: process
+    clk_process :process
     begin
-        while true loop
+        while now < 500 ns loop
             CLK <= '0';
-            wait for clk_period / 2;
+            wait for CLK_PERIOD/2;
             CLK <= '1';
-            wait for clk_period / 2;
+            wait for CLK_PERIOD/2;
         end loop;
+        wait;
     end process;
-
-    -- Processo di stimolo
-    stimulus: process
-    begin
+    
+    -- Processo Stimolo
+    stim_proc: process
+    begin    
         -- Reset iniziale
         RST <= '1';
-        wait for clk_period;
+        wait for 2*CLK_PERIOD;
         RST <= '0';
-
-        -- Simulazione con M=0 (sequenza standard)
+        wait for CLK_PERIOD;
+        
+        -- Test con M = 0, sequenza 101
         M <= '0';
-
-        -- Inizio sequenza: 0, 1, 0, 1 (stato S3 -> Y=1)
-        i <= '0'; wait for clk_period;
-        i <= '1'; wait for clk_period;
-        i <= '0'; wait for clk_period;
-        i <= '1'; wait for clk_period;
-
-        -- Test stato S5 (inserisco una transizione verso S5)
-        i <= '0'; wait for clk_period;
-        i <= '1'; wait for clk_period;
-        
-        -- Attiva reset durante la sequenza
-        RST <= '1';
+        i <= '1';
         wait for CLK_PERIOD;
-        RST <= '0';
-
-
-        -- Cambia M a 1 e verifica sequenza alternativa
+        i <= '0';
+        wait for CLK_PERIOD;
+        i <= '1';
+        wait for CLK_PERIOD;
+        
+        -- Test con M = 1, sequenza 110
         M <= '1';
-        i <= '1'; wait for clk_period;
-        i <= '1'; wait for clk_period;
-        i <= '0'; wait for clk_period;
-        i <= '1'; wait for clk_period;
-
-        -- Test combinato con reset intermittente
+        wait for CLK_PERIOD;
+        i <= '1';
+        wait for CLK_PERIOD;
+        i <= '1';
+        wait for CLK_PERIOD;
+        i <= '0';
+        wait for CLK_PERIOD;
+        
+        -- Test con reset intermedio
         RST <= '1';
-        wait for 2 * CLK_PERIOD;
+        wait for CLK_PERIOD;
         RST <= '0';
         wait for CLK_PERIOD;
-
-        -- Testare la sequenza con vari input
-        -- Mode 1: S0, S1, S2, S3 (output Y = '1')
-        M <= '0'; i <= '1';
-        wait for 2 * CLK_PERIOD; -- Transizione a S1
-        i <= '1';
-        wait for 2 * CLK_PERIOD; -- Transizione a S2
-        i <= '0';
-        wait for 2 * CLK_PERIOD; -- Transizione a S3 (Y = '1')
         
-        -- Mode 2:  S6, S7, S8 (output Y = '1')
-        M <= '1'; i <= '1';
-        wait for 2 * CLK_PERIOD; -- Transizione a S6
+        -- Sequenza aggiuntiva per validazione
         i <= '1';
-        wait for 2 * CLK_PERIOD; -- Transizione a S7
+        wait for CLK_PERIOD;
         i <= '0';
-        wait for 2 * CLK_PERIOD; -- Transizione a S8 (Y = '1')
-
-
-         wait;
-
+        wait for CLK_PERIOD;
+        i <= '1';
+        wait for CLK_PERIOD;
+        
+        wait;
     end process;
 
-end test;
+END behavior;

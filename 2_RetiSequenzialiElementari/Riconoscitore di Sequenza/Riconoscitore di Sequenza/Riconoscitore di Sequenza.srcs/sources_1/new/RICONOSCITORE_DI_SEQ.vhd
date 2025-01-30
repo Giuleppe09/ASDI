@@ -47,16 +47,16 @@ architecture Behavioral of RICONOSCITORE_DI_SEQ is
     type stato is (S0, S1, S2, S3, S4, S5, S6, S7, S8);
     signal stato_corrente : stato := S0;  -- Stato attuale
     signal stato_prossimo : stato;        -- Prossimo stato
-    signal temp: std_logic;              -- Segnale temporaneo (se necessario)
+    signal temp_Y: std_logic;              -- Segnale temporaneo (se necessario)
 
 begin
 
     -- Processo combinatorio: determinazione del prossimo stato e delle uscite
-    stato_uscita: process(stato_corrente, i, M)
+    stato_uscita: process(stato_corrente, i, M) --il modo può cambiare durante l'esecuzione ma lo valuto solo in S0
     begin
         case stato_corrente is
             when S0 =>
-                Y <= '0';
+                temp_Y <= '0';
                 if M = '0' then
                     stato_prossimo <= S1;
                 else
@@ -64,7 +64,7 @@ begin
                 end if;
 
             when S1 =>
-                Y <= '0';
+                temp_Y <= '0';
                 if i = '1' then
                     stato_prossimo <= S2;
                 else
@@ -72,7 +72,7 @@ begin
                 end if;
 
             when S2 =>
-                Y <= '0';
+                temp_Y <= '0';
                 if i = '0' then
                     stato_prossimo <= S3;
                 else
@@ -80,19 +80,24 @@ begin
                 end if;
 
             when S3 =>
-                Y <= '1';  -- Uscita associata a S3
                 stato_prossimo <= S1;  -- Il reset sarà gestito nel processo sequenziale
+                -- a seconda di i ci andrà con un'uscita diversa
+                if i = '1' then
+                    temp_Y <= '1';
+                else
+                    temp_Y <= '0';
+                end if;
 
             when S4 =>
-                Y <= '0';
+                temp_Y <= '0';
                 stato_prossimo <= S5;
 
             when S5 =>
-                Y <= '0';  -- Anche qui il reset sarà gestito nel processo sequenziale
+                temp_Y <= '0';  -- Anche qui il reset sarà gestito nel processo sequenziale
                 stato_prossimo <= S1;
 
             when S6 =>
-                Y <= '0';
+                temp_Y <= '0';
                 if i = '1' then
                     stato_prossimo <= S7;
                 else
@@ -100,7 +105,7 @@ begin
                 end if;
 
             when S7 =>
-                Y <= '0';
+                temp_Y <= '0';
                 if i = '0' then
                     stato_prossimo <= S8;
                 else
@@ -109,17 +114,18 @@ begin
 
             when S8 =>
                 if i = '1' then
-                    Y <= '1';
+                    temp_Y <= '1';
                 else
-                    Y <= '0';
+                    temp_Y <= '0';
                 end if;
                 stato_prossimo <= S6;
 
             when others =>
                 stato_prossimo <= S0;
-                Y <= '0';
+                temp_Y <= '0';
         end case;
     end process;
+    
 
     -- Processo sequenziale: gestione del reset e aggiornamento dello stato corrente
     stato_memoria: process(CLK)
@@ -128,6 +134,7 @@ begin
             if (RST = '1') then
                 -- Se RST è alto, reset immediato allo stato iniziale
                 stato_corrente <= S0;
+                Y <= '0';
             else
                 -- Controllo specifico del reset in base a M e allo stato corrente
                 if M = '0' then
@@ -135,15 +142,19 @@ begin
                     if stato_corrente = S3 or stato_corrente = S5 then
                         if RST = '1' then
                             stato_corrente <= S0;  -- Reset allo stato iniziale
+                            Y <= '0';
                         else
                             stato_corrente <= stato_prossimo;
+                            Y <= temp_Y;
                         end if;
                     else
                         stato_corrente <= stato_prossimo;
+                        Y <= temp_Y;
                     end if;
                 else
                     -- Per M=1, nessun controllo aggiuntivo, passo direttamente al prossimo stato
                     stato_corrente <= stato_prossimo;
+                    Y <= temp_Y;
                 end if;
             end if;
         end if;

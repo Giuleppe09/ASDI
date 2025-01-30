@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd" \
+"../../../../Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd" \
+"../../../../Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd" \
+"../../../../Riconoscitore_seq_onBoard.srcs/sim_1/new/Riconoscitore_onBoard_tb.vhd" \
+
+# Do not sort compile order
+nosort

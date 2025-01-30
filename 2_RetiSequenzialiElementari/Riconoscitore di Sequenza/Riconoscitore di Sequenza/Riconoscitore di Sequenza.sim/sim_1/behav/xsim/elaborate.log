@@ -1,7 +1,7 @@
 Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_riconoscitore_behav xil_defaultlib.tb_riconoscitore -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_RICONOSCITORE_DI_SEQ_behav xil_defaultlib.TB_RICONOSCITORE_DI_SEQ -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,7 +11,8 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
 Compiling architecture behavioral of entity xil_defaultlib.RICONOSCITORE_DI_SEQ [riconoscitore_di_seq_default]
-Compiling architecture test of entity xil_defaultlib.tb_riconoscitore
-Built simulation snapshot tb_riconoscitore_behav
+Compiling architecture behavior of entity xil_defaultlib.tb_riconoscitore_di_seq
+Built simulation snapshot TB_RICONOSCITORE_DI_SEQ_behav

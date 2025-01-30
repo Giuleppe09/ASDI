@@ -18,10 +18,14 @@
   <File Type="BITSTR-NKY" Name="RICONOSCITORE_DI_SEQ.nky"/>
   <File Type="BITSTR-BMM" Name="RICONOSCITORE_DI_SEQ_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="RICONOSCITORE_DI_SEQ.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="RICONOSCITORE_DI_SEQ_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="RICONOSCITORE_DI_SEQ.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RICONOSCITORE_DI_SEQ_methodology_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="RICONOSCITORE_DI_SEQ.ltx"/>
+  <File Type="BOOT-PDI-FILE" Name="RICONOSCITORE_DI_SEQ_soc.pdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="NPI_FILE" Name="RICONOSCITORE_DI_SEQ.npi"/>
   <File Type="OPT-DRC" Name="RICONOSCITORE_DI_SEQ_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="RICONOSCITORE_DI_SEQ.hwdef"/>
   <File Type="PLACE-IO" Name="RICONOSCITORE_DI_SEQ_io_placed.rpt"/>
@@ -55,17 +59,13 @@
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="RICONOSCITORE_DI_SEQ_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="RICONOSCITORE_DI_SEQ_bus_skew_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="RICONOSCITORE_DI_SEQ_bus_skew_postroute_physopted.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="RICONOSCITORE_DI_SEQ_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="RICONOSCITORE_DI_SEQ_methodology_drc_routed.pb"/>
   <File Type="ROUTE-DRC-RPX" Name="RICONOSCITORE_DI_SEQ_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="RICONOSCITORE_DI_SEQ_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="RICONOSCITORE_DI_SEQ.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="RICONOSCITORE_DI_SEQ_soc.pdi"/>
   <File Type="PL-PDI-FILE" Name="RICONOSCITORE_DI_SEQ_pld.pdi"/>
   <File Type="RCFI_FILE" Name="RICONOSCITORE_DI_SEQ.rcfi"/>
   <File Type="CFI_FILE" Name="RICONOSCITORE_DI_SEQ.cfi"/>
   <File Type="RNPI_FILE" Name="RICONOSCITORE_DI_SEQ.rnpi"/>
-  <File Type="NPI_FILE" Name="RICONOSCITORE_DI_SEQ.npi"/>
   <File Type="RBD_FILE" Name="RICONOSCITORE_DI_SEQ.rbd"/>
   <File Type="ROUTE-RQS" Name="RICONOSCITORE_DI_SEQ_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="RICONOSCITORE_DI_SEQ_postroute_physopted.rqs"/>

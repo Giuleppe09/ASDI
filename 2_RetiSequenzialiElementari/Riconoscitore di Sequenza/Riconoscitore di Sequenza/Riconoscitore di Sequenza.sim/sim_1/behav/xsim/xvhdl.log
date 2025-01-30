@@ -1,2 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore di Sequenza/Riconoscitore di Sequenza.srcs/sim_1/new/tb_riconoscitore.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_riconoscitore'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.srcs/sources_1/new/RICONOSCITORE_DI_SEQ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RICONOSCITORE_DI_SEQ'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.srcs/sim_1/new/tb_riconoscitore.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_RICONOSCITORE_DI_SEQ'
