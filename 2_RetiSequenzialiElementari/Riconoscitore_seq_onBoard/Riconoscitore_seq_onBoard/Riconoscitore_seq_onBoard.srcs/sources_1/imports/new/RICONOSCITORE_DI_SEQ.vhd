@@ -1,44 +1,14 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 27.11.2024 09:06:09
--- Design Name: 
--- Module Name: RICONOSCITORE_DI_SEQ - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity RICONOSCITORE_DI_SEQ is
     port(
-        i: in std_logic; --ingresso
-        i_read: in std_logic;--permesso di leggere l'ingresso
-        RST,CLK: in std_logic; 
-        M: in std_logic; --modo
-        m_read: in std_logic;--permesso di leggere il modo
-        Y: out std_logic; --uscita
+        i: in std_logic; -- ingresso
+        i_read: in std_logic; -- permesso di leggere l'ingresso
+        RST: in std_logic; -- reset asincrono
+        M: in std_logic; -- modo
+        m_read: in std_logic; -- permesso di leggere il modo
+        Y: out std_logic; -- uscita
         state: out std_logic_vector(3 downto 0)
     );
 end RICONOSCITORE_DI_SEQ;
@@ -48,109 +18,111 @@ architecture Behavioral of RICONOSCITORE_DI_SEQ is
     -- Definizione degli stati
     type stato is (S0, S1, S2, S3, S4, S5, S6, S7, S8);
     signal stato_corrente : stato := S0;  -- Stato attuale
-    signal stato_prossimo : stato;        -- Prossimo stato
     signal temp_Y: std_logic;
 
 begin
 
     -- Processo combinatorio: determinazione del prossimo stato e delle uscite
-    stato_uscita: process(stato_corrente, i, M) --il modo può cambiare durante l'esecuzione ma lo valuto solo in S0
+    process(stato_corrente, i, M, RST, i_read, m_read)
     begin
-        case stato_corrente is
-            when S0 =>
-                temp_Y <= '0';
-                if M = '0' then
-                    stato_prossimo <= S1;
-                else
-                    stato_prossimo <= S6;
-                end if;
-
-            when S1 =>
-                temp_Y <= '0';
-                if i = '1' then
-                    stato_prossimo <= S2;
-                else
-                    stato_prossimo <= S4;
-                end if;
-
-            when S2 =>
-                temp_Y <= '0';
-                if i = '0' then
-                    stato_prossimo <= S3;
-                else
-                    stato_prossimo <= S5;
-                end if;
-
-            when S3 =>
-                stato_prossimo <= S1;  -- Il reset sarà gestito nel processo sequenziale
-                -- a seconda di i ci andrà con un'uscita diversa
-                if i = '1' then
-                    temp_Y <= '1';
-                else
+        if RST = '1' then
+            stato_corrente <= S0;
+            temp_Y <= '0';
+        else
+            case stato_corrente is
+                when S0 =>
                     temp_Y <= '0';
-                end if;
-
-            when S4 =>
-                temp_Y <= '0';
-                stato_prossimo <= S5;
-
-            when S5 =>
-                temp_Y <= '0';  -- Anche qui il reset sarà gestito nel processo sequenziale
-                stato_prossimo <= S1;
-
-            when S6 =>
-                temp_Y <= '0';
-                if i = '1' then
-                    stato_prossimo <= S7;
-                else
-                    stato_prossimo <= S6;
-                end if;
-
-            when S7 =>
-                temp_Y <= '0';
-                if i = '0' then
-                    stato_prossimo <= S8;
-                else
-                    stato_prossimo <= S7;
-                end if;
-
-            when S8 =>
-                if i = '1' then
-                    temp_Y <= '1';
-                else
+                    if m_read = '1' then
+                        if M = '0' then
+                            stato_corrente <= S1;
+                        else
+                            stato_corrente <= S6;
+                        end if;
+                    end if;
+                
+                when S1 =>
                     temp_Y <= '0';
-                end if;
-                stato_prossimo <= S6;
-
-            when others =>
-                stato_prossimo <= S0;
-                temp_Y <= '0';
-        end case;
-    end process;
-
-    -- Processo sequenziale: gestione del reset e aggiornamento dello stato corrente
-    stato_memoria: process(CLK)
-    begin
-        if rising_edge(CLK) then
-        
-            if RST = '1' then
-                stato_corrente <= S0;
-                Y <= '0';
-            else
-                --Leggo M solo se ho il permesso e sono in S0
-                if(m_read = '1') and (stato_corrente = S0)  then
-                    stato_corrente<= stato_prossimo;
-                    Y <= temp_Y;
-                    
-                elsif (i_read = '1')and not(stato_corrente = S0) then
-                    stato_corrente<= stato_prossimo;
-                    Y <= temp_Y;
-                end if;
-            end if;
+                    if i_read = '1' then
+                        if i = '1' then
+                            stato_corrente <= S2;
+                        else
+                            stato_corrente <= S4;
+                        end if;
+                    end if;
+                
+                when S2 =>
+                    temp_Y <= '0';
+                    if i_read = '1' then
+                        if i = '0' then
+                            stato_corrente <= S3;
+                        else
+                            stato_corrente <= S5;
+                        end if;
+                    end if;
+                
+                when S3 =>
+                    if i_read = '1' then
+                        stato_corrente <= S1;
+                        if i = '1' then
+                            temp_Y <= '1';
+                        else
+                            temp_Y <= '0';
+                        end if;
+                    end if;
+                
+                when S4 =>
+                    temp_Y <= '0';
+                    if i_read = '1' then
+                        stato_corrente <= S5;
+                    end if;
+                
+                when S5 =>
+                    temp_Y <= '0';
+                    if i_read = '1' then
+                        stato_corrente <= S1;
+                    end if;
+                
+                when S6 =>
+                    temp_Y <= '0';
+                    if i_read = '1' then
+                        if i = '1' then
+                            stato_corrente <= S7;
+                        else
+                            stato_corrente <= S6;
+                        end if;
+                    end if;
+                
+                when S7 =>
+                    temp_Y <= '0';
+                    if i_read = '1' then
+                        if i = '0' then
+                            stato_corrente <= S8;
+                        else
+                            stato_corrente <= S7;
+                        end if;
+                    end if;
+                
+                when S8 =>
+                    if i_read = '1' then
+                        if i = '1' then
+                            temp_Y <= '1';
+                        else
+                            temp_Y <= '0';
+                        end if;
+                        stato_corrente <= S6;
+                    end if;
+                
+                when others =>
+                    stato_corrente <= S0;
+                    temp_Y <= '0';
+            end case;
         end if;
     end process;
 
-    -- Codifica dello stato corrente per debug (opzionale)
+    -- Assegnazione delle uscite
+    Y <= temp_Y;
+    
+    -- Codifica dello stato corrente per debug
     with stato_corrente select 
         state <= x"0" when S0, 
                 x"1" when S1, 
@@ -164,4 +136,3 @@ begin
                 x"9" when others;
 
 end Behavioral;
-

@@ -40,7 +40,7 @@ begin
             else
                 
                     reg_data <= i;
-                els
+                else
                     reg_M <= M;
                 end if;
            end if;
