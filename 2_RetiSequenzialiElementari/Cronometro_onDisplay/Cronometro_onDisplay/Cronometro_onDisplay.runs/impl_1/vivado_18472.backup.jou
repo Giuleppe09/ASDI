@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Jan 31 16:13:42 2025
+# Process ID: 18472
+# Current directory: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.runs/impl_1
+# Command line: vivado.exe -log Cronometro_onBoard.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Cronometro_onBoard.tcl -notrace
+# Log file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.runs/impl_1/Cronometro_onBoard.vdi
+# Journal file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.runs/impl_1\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
+#-----------------------------------------------------------
+source Cronometro_onBoard.tcl -notrace

@@ -1,0 +1,370 @@
+
+*** Running vivado
+    with args -log Cronometro_onBoard.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cronometro_onBoard.tcl
+
+
+ECHO disattivato.
+ECHO disattivato.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source Cronometro_onBoard.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 496.129 ; gain = 222.105
+Command: read_checkpoint -auto_incremental -incremental C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/utils_1/imports/synth_1/Cronometro_onBoard.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/utils_1/imports/synth_1/Cronometro_onBoard.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Cronometro_onBoard -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1096
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1325.266 ; gain = 411.637
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2551] possible infinite loop; process does not have a wait statement [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/cathodes_manager.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'Cronometro_onBoard' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/new/Cronometro_onBoard.vhd:19]
+INFO: [Synth 8-3491] module 'Blocco_acquisizione' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd:5' bound to instance 'BA' of component 'Blocco_acquisizione' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/new/Cronometro_onBoard.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'Blocco_acquisizione' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd:18]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/ButtonDebouncer.vhd:34' bound to instance 'deb' of component 'ButtonDebouncer' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/ButtonDebouncer.vhd:46]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 10000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/ButtonDebouncer.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/ButtonDebouncer.vhd:46]
+INFO: [Synth 8-3491] module 'Control_unit' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Control_unit.vhd:4' bound to instance 'CU' of component 'Control_unit' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'Control_unit' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Control_unit.vhd:16]
+INFO: [Synth 8-226] default block is never used [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Control_unit.vhd:26]
+WARNING: [Synth 8-614] signal 'stato_corrente' is read in the process but is not in the sensitivity list [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Control_unit.vhd:24]
+WARNING: [Synth 8-614] signal 'load' is read in the process but is not in the sensitivity list [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Control_unit.vhd:24]
+INFO: [Synth 8-226] default block is never used [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Control_unit.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'Control_unit' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Control_unit.vhd:16]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'registro_acq' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd:4' bound to instance 'reg_sec' of component 'registro_acq' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'registro_acq' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd:17]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'registro_acq' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd:17]
+	Parameter N bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'registro_acq' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd:4' bound to instance 'reg_min' of component 'registro_acq' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd:94]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'registro_acq' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd:4' bound to instance 'reg_ore' of component 'registro_acq' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'registro_acq__parameterized2' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd:17]
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'registro_acq__parameterized2' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Blocco_acquisizione' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd:18]
+INFO: [Synth 8-3491] module 'cronometro' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/cronometro.vhd:4' bound to instance 'CR' of component 'cronometro' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/new/Cronometro_onBoard.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'cronometro' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/cronometro.vhd:18]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider_cronometro' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro/Cronometro.srcs/sources_1/imports/new/Frequency_div.vhd:4' bound to instance 'base_dei_tempi' of component 'clock_divider_cronometro' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/cronometro.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'clock_divider_cronometro' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro/Cronometro.srcs/sources_1/imports/new/Frequency_div.vhd:16]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider_cronometro' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro/Cronometro.srcs/sources_1/imports/new/Frequency_div.vhd:16]
+	Parameter modulo bound to: 60 - type: integer 
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/contatore.vhd:5' bound to instance 'counter_secondi' of component 'counter' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/cronometro.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/contatore.vhd:21]
+	Parameter modulo bound to: 60 - type: integer 
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/contatore.vhd:21]
+	Parameter modulo bound to: 60 - type: integer 
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/contatore.vhd:5' bound to instance 'counter_minuti' of component 'counter' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/cronometro.vhd:85]
+	Parameter modulo bound to: 24 - type: integer 
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'Counter' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/contatore.vhd:5' bound to instance 'counter_ore' of component 'counter' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/cronometro.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'Counter__parameterized0' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/contatore.vhd:21]
+	Parameter modulo bound to: 24 - type: integer 
+	Parameter n bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Counter__parameterized0' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/contatore.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'cronometro' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/cronometro.vhd:18]
+INFO: [Synth 8-3491] module 'Blocco_Visualizzazione' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_Visualizzazione.vhd:4' bound to instance 'BV' of component 'Blocco_Visualizzazione' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/new/Cronometro_onBoard.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'Blocco_Visualizzazione' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_Visualizzazione.vhd:17]
+INFO: [Synth 8-3491] module 'encoder_display' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/encoder_display.vhd:7' bound to instance 'encoder' of component 'Encoder_Display' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_Visualizzazione.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'encoder_display' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/encoder_display.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'encoder_display' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/encoder_display.vhd:16]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'display_seven_segments' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd:6' bound to instance 'display' of component 'display_seven_segments' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_Visualizzazione.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'display_seven_segments' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd:20]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/clock_divider.vhd:12' bound to instance 'clk_divider_instance' of component 'clock_divider' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd:81]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/clock_divider.vhd:22]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/clock_divider.vhd:22]
+INFO: [Synth 8-3491] module 'counter_mod8' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/new/counter_mod8.vhd:32' bound to instance 'counter_instance' of component 'counter_mod8' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'counter_mod8' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/new/counter_mod8.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'counter_mod8' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/new/counter_mod8.vhd:39]
+INFO: [Synth 8-3491] module 'cathodes_input_manager' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/new/cathodes_input_manager.vhd:11' bound to instance 'cathodes_input_man_instance' of component 'cathodes_input_manager' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'cathodes_input_manager' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/new/cathodes_input_manager.vhd:21]
+INFO: [Synth 8-226] default block is never used [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/new/cathodes_input_manager.vhd:25]
+INFO: [Synth 8-226] default block is never used [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/new/cathodes_input_manager.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'cathodes_input_manager' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/new/cathodes_input_manager.vhd:21]
+INFO: [Synth 8-3491] module 'cathodes_manager' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/cathodes_manager.vhd:32' bound to instance 'cathodes_instance' of component 'cathodes_manager' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'cathodes_manager' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/cathodes_manager.vhd:38]
+INFO: [Synth 8-226] default block is never used [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/cathodes_manager.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'cathodes_manager' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/cathodes_manager.vhd:38]
+INFO: [Synth 8-3491] module 'anodes_manager' declared at 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/anodes_manager.vhd:32' bound to instance 'anodes_instance' of component 'anodes_manager' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'anodes_manager' [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/anodes_manager.vhd:39]
+INFO: [Synth 8-226] default block is never used [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/anodes_manager.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'anodes_manager' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/anodes_manager.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display_seven_segments' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Blocco_Visualizzazione' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_Visualizzazione.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'Cronometro_onBoard' (0#1) [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/new/Cronometro_onBoard.vhd:19]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1417.910 ; gain = 504.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1417.910 ; gain = 504.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1417.910 ; gain = 504.281
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1417.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Cronometro_onBoard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Cronometro_onBoard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1520.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1520.625 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'BTN_state_reg' in module 'ButtonDebouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'stato_corrente_reg' in module 'Control_unit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             not_pressed |                               00 |                               00
+             chk_pressed |                               01 |                               01
+                 pressed |                               10 |                               10
+         chk_not_pressed |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'BTN_state_reg' using encoding 'sequential' in module 'ButtonDebouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                  load_s |                             0010 |                               01
+                  load_m |                             0100 |                               10
+                  load_o |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stato_corrente_reg' using encoding 'one-hot' in module 'Control_unit'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 4     
+	  11 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 7     
+	   6 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     2|
+|4     |LUT2   |    11|
+|5     |LUT3   |    15|
+|6     |LUT4   |    54|
+|7     |LUT5   |    37|
+|8     |LUT6   |    34|
+|9     |MUXF7  |     4|
+|10    |FDRE   |   127|
+|11    |FDSE   |     1|
+|12    |IBUF   |    10|
+|13    |OBUF   |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.625 ; gain = 606.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 1520.625 ; gain = 504.281
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.625 ; gain = 606.996
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1520.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1520.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e33eabc5
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:45 . Memory (MB): peak = 1520.625 ; gain = 1000.605
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.runs/synth_1/Cronometro_onBoard.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Cronometro_onBoard_utilization_synth.rpt -pb Cronometro_onBoard_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 31 17:14:05 2025...
