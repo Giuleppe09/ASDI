@@ -1,0 +1,238 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Jan 29 17:41:30 2025
+# Process ID: 29832
+# Current directory: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.runs/synth_1
+# Command line: vivado.exe -log Sistema_ROM_M.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sistema_ROM_M.tcl
+# Log file: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.runs/synth_1/Sistema_ROM_M.vds
+# Journal file: C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.runs/synth_1\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
+#-----------------------------------------------------------
+source Sistema_ROM_M.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 492.750 ; gain = 220.512
+Command: synth_design -top Sistema_ROM_M -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33896
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1319.797 ; gain = 408.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Sistema_ROM_M' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/new/Sistema_ROM_M.vhd:12]
+INFO: [Synth 8-3491] module 'ROM' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd:7' bound to instance 'ROM_16' of component 'ROM' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/new/Sistema_ROM_M.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'ROM' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ROM' (0#1) [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd:15]
+INFO: [Synth 8-3491] module 'RCA_Nbit' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd:5' bound to instance 'RCA_M' of component 'RCA_Nbit' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/new/Sistema_ROM_M.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'RCA_Nbit' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd:18]
+	Parameter N bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'myFA' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd:37' bound to instance 'FA_0' of component 'myFA' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'myFA' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'myFA' (0#1) [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd:48]
+INFO: [Synth 8-3491] module 'myFA' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd:37' bound to instance 'FA_comp' of component 'myFA' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd:57]
+INFO: [Synth 8-3491] module 'myFA' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd:37' bound to instance 'FA_comp' of component 'myFA' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd:57]
+INFO: [Synth 8-3491] module 'myFA' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd:37' bound to instance 'FA_comp' of component 'myFA' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'RCA_Nbit' (0#1) [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'Sistema_ROM_M' (0#1) [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/new/Sistema_ROM_M.vhd:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1410.012 ; gain = 498.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1410.012 ; gain = 498.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1410.012 ; gain = 498.320
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1410.012 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Sistema_ROM_M_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Sistema_ROM_M_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1431.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1431.102 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++--------------+------------+---------------+----------------+
+|Module Name   | RTL Object | Depth x Width | Implemented As | 
++--------------+------------+---------------+----------------+
+|ROM           | ROM        | 16x8          | LUT            | 
+|Sistema_ROM_M | p_0_out    | 16x8          | LUT            | 
++--------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     1|
+|2     |LUT3 |     6|
+|3     |LUT4 |     4|
+|4     |LUT5 |     1|
+|5     |LUT6 |     1|
+|6     |IBUF |     4|
+|7     |OBUF |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1431.102 ; gain = 519.410
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 1431.102 ; gain = 498.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1431.102 ; gain = 519.410
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1431.293 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 80c9751d
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 1441.082 ; gain = 948.332
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.runs/synth_1/Sistema_ROM_M.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Sistema_ROM_M_utilization_synth.rpt -pb Sistema_ROM_M_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 29 17:42:21 2025...

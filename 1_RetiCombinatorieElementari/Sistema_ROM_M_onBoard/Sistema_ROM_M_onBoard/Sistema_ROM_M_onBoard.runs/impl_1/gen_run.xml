@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1738168882">
+  <File Type="ROUTE-PWR" Name="Sistema_ROM_M_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Sistema_ROM_M.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="Sistema_ROM_M_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Sistema_ROM_M_reports.tcl"/>
+  <File Type="OPT-RQA-PB" Name="Sistema_ROM_M_rqa_opted.pb"/>
+  <File Type="BITSTR-MMI" Name="Sistema_ROM_M.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Sistema_ROM_M_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Sistema_ROM_M_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="Sistema_ROM_M_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Sistema_ROM_M_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Sistema_ROM_M_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Sistema_ROM_M.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Sistema_ROM_M_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Sistema_ROM_M_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Sistema_ROM_M_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Sistema_ROM_M_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Sistema_ROM_M_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Sistema_ROM_M_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Sistema_ROM_M_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Sistema_ROM_M_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Sistema_ROM_M_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Sistema_ROM_M_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Sistema_ROM_M_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Sistema_ROM_M.bin"/>
+  <File Type="PLACE-TIMING" Name="Sistema_ROM_M_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Sistema_ROM_M_power_routed.rpx"/>
+  <File Type="PLACE-RQA-PB" Name="Sistema_ROM_M_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Sistema_ROM_M_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Sistema_ROM_M.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Sistema_ROM_M_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Sistema_ROM_M_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Sistema_ROM_M_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Sistema_ROM_M.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Sistema_ROM_M_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Sistema_ROM_M_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Sistema_ROM_M_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Sistema_ROM_M_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Sistema_ROM_M_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Sistema_ROM_M_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Sistema_ROM_M_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Sistema_ROM_M_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Sistema_ROM_M_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Sistema_ROM_M_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-RQS-PB" Name="Sistema_ROM_M_rqs_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="Sistema_ROM_M_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Sistema_ROM_M_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Sistema_ROM_M_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Sistema_ROM_M_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Sistema_ROM_M_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Sistema_ROM_M_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Sistema_ROM_M_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Sistema_ROM_M_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Sistema_ROM_M_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Sistema_ROM_M_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Sistema_ROM_M_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Sistema_ROM_M_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Sistema_ROM_M_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Sistema_ROM_M_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Sistema_ROM_M_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Sistema_ROM_M_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Sistema_ROM_M.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Sistema_ROM_M_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Sistema_ROM_M_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Sistema_ROM_M.nky"/>
+  <File Type="BITSTR-BMM" Name="Sistema_ROM_M_bd.bmm"/>
+  <File Type="PDI-FILE" Name="Sistema_ROM_M.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="Sistema_ROM_M_soc.pdi"/>
+  <File Type="PL-PDI-FILE" Name="Sistema_ROM_M_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="Sistema_ROM_M.rcfi"/>
+  <File Type="CFI_FILE" Name="Sistema_ROM_M.cfi"/>
+  <File Type="RNPI_FILE" Name="Sistema_ROM_M.rnpi"/>
+  <File Type="NPI_FILE" Name="Sistema_ROM_M.npi"/>
+  <File Type="RBD_FILE" Name="Sistema_ROM_M.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Sistema_ROM_M.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Sistema_ROM_M.sysdef"/>
+  <File Type="BG-BGN" Name="Sistema_ROM_M.bgn"/>
+  <File Type="BG-DRC" Name="Sistema_ROM_M.drc"/>
+  <File Type="RDI-RDI" Name="Sistema_ROM_M.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="Sistema_ROM_M_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Sistema_ROM_M_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd"/>
+        <Attr Name="ImportTime" Val="1729778928"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd"/>
+        <Attr Name="ImportTime" Val="1729780409"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd"/>
+        <Attr Name="ImportTime" Val="1730116291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Sistema_ROM_M.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Sistema_ROM_M"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Downloads/digilent-xdc-master/digilent-xdc-master/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1738150359"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
