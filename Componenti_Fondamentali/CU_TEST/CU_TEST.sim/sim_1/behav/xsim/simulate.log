@@ -1,0 +1,15 @@
+Time resolution is 1 ps
+Error: Errore: Stato non è IDLE dopo U_max=1
+Time: 70 ns  Iteration: 0  Process: /tb_Control_unit/line__67  File: C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/CU_TEST/CU_TEST.srcs/sim_1/new/tb.vhd
+Error: Errore: Reset non ha riportato a IDLE
+Time: 100 ns  Iteration: 0  Process: /tb_Control_unit/line__67  File: C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/CU_TEST/CU_TEST.srcs/sim_1/new/tb.vhd
+Error: Errore: Uscite errate in READ_STATE
+Time: 110 ns  Iteration: 0  Process: /tb_Control_unit/line__67  File: C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/CU_TEST/CU_TEST.srcs/sim_1/new/tb.vhd
+Error: Errore: Uscite errate in WRITE_STATE
+Time: 120 ns  Iteration: 0  Process: /tb_Control_unit/line__67  File: C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/CU_TEST/CU_TEST.srcs/sim_1/new/tb.vhd
+Error: Errore: Uscite errate in COUNT_STATE
+Time: 130 ns  Iteration: 0  Process: /tb_Control_unit/line__67  File: C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/CU_TEST/CU_TEST.srcs/sim_1/new/tb.vhd
+Error: Errore: Stato non è tornato in IDLE con U_max=1
+Time: 150 ns  Iteration: 0  Process: /tb_Control_unit/line__67  File: C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/CU_TEST/CU_TEST.srcs/sim_1/new/tb.vhd
+Note: Test completato con successo!
+Time: 150 ns  Iteration: 0  Process: /tb_Control_unit/line__67  File: C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/CU_TEST/CU_TEST.srcs/sim_1/new/tb.vhd

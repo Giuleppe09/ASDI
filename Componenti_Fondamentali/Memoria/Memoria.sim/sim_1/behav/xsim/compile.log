@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/Memoria/Memoria.srcs/sources_1/new/MEM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mem_out'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/Memoria/Memoria.srcs/sim_1/new/tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_mem_out'

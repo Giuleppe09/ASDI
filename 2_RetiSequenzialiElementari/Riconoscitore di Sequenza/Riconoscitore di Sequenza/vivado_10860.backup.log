@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Feb  3 12:06:03 2025
-# Process ID: 10736
+# Start of session at: Thu Jan 30 17:52:20 2025
+# Process ID: 10860
 # Current directory: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11548 C:\Users\umber\OneDrive\Desktop\AsDi\2_RetiSequenzialiElementari\Riconoscitore di Sequenza\Riconoscitore di Sequenza\Riconoscitore di Sequenza.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16664 C:\Users\umber\OneDrive\Desktop\AsDi\2_RetiSequenzialiElementari\Riconoscitore di Sequenza\Riconoscitore di Sequenza\Riconoscitore di Sequenza.xpr
 # Log file: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/vivado.log
 # Journal file: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza\vivado.jou
 # Running On: LAPTOP-AOM7HOQR, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 2, Host memory: 8316 MB
@@ -114,13 +114,80 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [Project 1-313] Project file moved from 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore di Sequenza' since last save.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:20 . Memory (MB): peak = 1494.316 ; gain = 410.441
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1493.961 ; gain = 363.688
 update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'TB_RICONOSCITORE_DI_SEQ'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_RICONOSCITORE_DI_SEQ' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_RICONOSCITORE_DI_SEQ_vhdl.prj"
+ECHO disattivato.
+ECHO disattivato.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.srcs/sources_1/new/RICONOSCITORE_DI_SEQ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RICONOSCITORE_DI_SEQ'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.srcs/sim_1/new/tb_riconoscitore.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TB_RICONOSCITORE_DI_SEQ'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_RICONOSCITORE_DI_SEQ_behav xil_defaultlib.TB_RICONOSCITORE_DI_SEQ -log elaborate.log"
+ECHO disattivato.
+ECHO disattivato.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_RICONOSCITORE_DI_SEQ_behav xil_defaultlib.TB_RICONOSCITORE_DI_SEQ -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.RICONOSCITORE_DI_SEQ [riconoscitore_di_seq_default]
+Compiling architecture behavior of entity xil_defaultlib.tb_riconoscitore_di_seq
+Built simulation snapshot TB_RICONOSCITORE_DI_SEQ_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore di Sequenza/Riconoscitore di Sequenza/Riconoscitore di Sequenza.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_RICONOSCITORE_DI_SEQ_behav -key {Behavioral:sim_1:Functional:TB_RICONOSCITORE_DI_SEQ} -tclbatch {TB_RICONOSCITORE_DI_SEQ.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TB_RICONOSCITORE_DI_SEQ.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_RICONOSCITORE_DI_SEQ_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1551.008 ; gain = 20.383
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Feb  3 12:09:55 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 30 18:08:37 2025...
