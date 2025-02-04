@@ -3,10 +3,10 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Mon Feb  3 12:37:34 2025
-# Process ID: 5708
+# Start of session at: Thu Jan 30 17:55:05 2025
+# Process ID: 14764
 # Current directory: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7372 C:\Users\umber\OneDrive\Desktop\AsDi\2_RetiSequenzialiElementari\Riconoscitore_seq_onBoard\Riconoscitore_seq_onBoard\Riconoscitore_seq_onBoard.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3084 C:\Users\umber\OneDrive\Desktop\AsDi\2_RetiSequenzialiElementari\Riconoscitore_seq_onBoard\Riconoscitore_seq_onBoard\Riconoscitore_seq_onBoard.xpr
 # Log file: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/vivado.log
 # Journal file: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard\vivado.jou
 # Running On: LAPTOP-AOM7HOQR, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 2, Host memory: 8316 MB
@@ -121,7 +121,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:18 . Memory (MB): peak = 1502.066 ; gain = 329.566
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 1501.379 ; gain = 383.703
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Feb  3 13:02:31 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 30 18:05:51 2025...
