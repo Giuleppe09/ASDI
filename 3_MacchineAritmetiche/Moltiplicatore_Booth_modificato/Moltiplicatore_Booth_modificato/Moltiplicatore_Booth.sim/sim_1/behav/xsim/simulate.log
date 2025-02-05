@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+Note: Test 1: X=5, Y=3 -> P=15
+Time: 345 ns  Iteration: 0  Process: /tb_molt_booth/stim_proc  File: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Moltiplicatore_Booth_modificato/Moltiplicatore_Booth.srcs/sim_1/new/tb_molt_booth.vhd
+Error: Test 1 Failed!
+Time: 345 ns  Iteration: 0  Process: /tb_molt_booth/stim_proc  File: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Moltiplicatore_Booth_modificato/Moltiplicatore_Booth.srcs/sim_1/new/tb_molt_booth.vhd
+Note: Test 2: X=-4, Y=2 -> P=-8
+Time: 625 ns  Iteration: 0  Process: /tb_molt_booth/stim_proc  File: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Moltiplicatore_Booth_modificato/Moltiplicatore_Booth.srcs/sim_1/new/tb_molt_booth.vhd
+Error: Test 2 Failed!
+Time: 625 ns  Iteration: 0  Process: /tb_molt_booth/stim_proc  File: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Moltiplicatore_Booth_modificato/Moltiplicatore_Booth.srcs/sim_1/new/tb_molt_booth.vhd
+Note: Test 3: X=-7, Y=-3 -> P=21
+Time: 925 ns  Iteration: 0  Process: /tb_molt_booth/stim_proc  File: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Moltiplicatore_Booth_modificato/Moltiplicatore_Booth.srcs/sim_1/new/tb_molt_booth.vhd
