@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed Feb  5 18:39:35 2025
+# Process ID: 31064
+# Current directory: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/7_Moltiplicatore_Booth_onBoard/7_Moltiplicatore_Booth_onBoard.runs/synth_1
+# Command line: vivado.exe -log molt_booth.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source molt_booth.tcl
+# Log file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/7_Moltiplicatore_Booth_onBoard/7_Moltiplicatore_Booth_onBoard.runs/synth_1/molt_booth.vds
+# Journal file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/7_Moltiplicatore_Booth_onBoard/7_Moltiplicatore_Booth_onBoard.runs/synth_1\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
+#-----------------------------------------------------------
+source molt_booth.tcl -notrace

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/Rom_read/Rom_read.srcs/sources_1/new/rom_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/Componenti_Fondamentali/Rom_read/Rom_read.srcs/sim_1/new/tb_ROM_read.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ROM_TB'
