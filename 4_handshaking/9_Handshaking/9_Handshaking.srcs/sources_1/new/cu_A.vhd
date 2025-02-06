@@ -47,6 +47,7 @@ architecture Behavioral of cu_A is
             
             rst_count <='0';
             read<='0';
+            en_count <= '0';
             
            
             CASE current_state is
@@ -60,11 +61,48 @@ architecture Behavioral of cu_A is
                     end if;
                     
                  WHEN WRITE_ON_BUS =>
-                    read <='1';
+                    read <='1'; 
+                    --viene posto sul bus......
+                    --Secondo me qui read deve restare alto per più cicli di clock.
                     next_state <= SEND_REQ;
                   
+                 WHEN SEND_REQ =>
+                    REQ_out <= '1'; --lo abbassiamo manualmente
+                    next_state <= WAIT_4_ACK;
+                 
+                 WHEN WAIT_4_ACK =>
+                    if(ACK='1') then
+                        next_state <= OK_ACK;
+                    else
+                        next_state <= WAIT_4_OUT;
+                    end if;
+                 
+                 WHEN ok_ack=>
+                    REQ_OUT<='0';
+                    next_state <= WAIT_4_DONE;
+                 
+                 WHEN WAIT_4_DONE =>
+                    if(ACK='0') then --Il ricevitore abbassa l'ack quando dovrebbe mandare il done.
+                    --In questo modo abbiamo sfruttato il protocollo interlacciato.
+                        next_state <= SENT;
+                    else
+                        next_state <= WAIT_4_DONE;
+                    end if;
+                    
+                 WHEN SENT =>
+                    next_state <= CHECK_COUNT;
+                    
+                 WHEN CHECK_COUNT =>
+                    en_count <= '1';
+                    
+                    if(count_in ="11")then
+                        next_state <= idle;
+                    else 
+                        next_state <= WRITE_ON_BUS;
+                    end if;
+                  
                 WHEN others =>
-		      next_state <= idle;
+		          next_state <= idle;
 		
 		end CASE;
 		
