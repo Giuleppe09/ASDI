@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Feb  7 18:34:48 2025
+# Process ID: 10344
+# Current directory: C:/Users/umber/OneDrive/Desktop/AsDi/10_Interfaccia_seriale
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1164 C:\Users\umber\OneDrive\Desktop\AsDi\10_Interfaccia_seriale\10_Interfaccia_seriale.xpr
+# Log file: C:/Users/umber/OneDrive/Desktop/AsDi/10_Interfaccia_seriale/vivado.log
+# Journal file: C:/Users/umber/OneDrive/Desktop/AsDi/10_Interfaccia_seriale\vivado.jou
+# Running On: LAPTOP-AOM7HOQR, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 2, Host memory: 8316 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/umber/OneDrive/Desktop/AsDi/10_Interfaccia_seriale/10_Interfaccia_seriale.xpruupdate_compile_order -fileset sources_1
+file mkdir C:/Users/umber/OneDrive/Desktop/AsDi/10_Interfaccia_seriale/10_Interfaccia_seriale.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/umber/OneDrive/Desktop/AsDi/10_Interfaccia_seriale/10_Interfaccia_seriale.srcs/sim_1/new/tb_nodoA.vhd w ]
+add_files -fileset sim_1 C:/Users/umber/OneDrive/Desktop/AsDi/10_Interfaccia_seriale/10_Interfaccia_seriale.srcs/sim_1/new/tb_nodoA.vhd
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source Nodo_B.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Nodo_A [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source tb_Nodo_A.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source tb_Nodo_A.tcl
+close_sim
+launch_simulation
+launch_simulation
+source tb_Nodo_A.tcl
+close_sim
+launch_simulation
+source tb_Nodo_A.tcl
+close_sim

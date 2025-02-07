@@ -1,0 +1,7 @@
+Running: xsim.dir/Nodo_B_behav/xsimk.exe -simmode gui -wdb Nodo_B_behav.wdb -simrunnum 0 -socket 58276
+Design successfully loaded
+Design Loading Memory Usage: 8800 KB (Peak: 8800 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 9308 KB (Peak: 9308 KB)
+Simulation CPU Usage: 0 ms
