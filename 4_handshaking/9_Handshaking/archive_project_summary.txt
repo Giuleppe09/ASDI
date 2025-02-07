@@ -95,6 +95,8 @@ None
 <sources_1>
 C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd
 C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd
+C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd
+C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/cont_mod8.vhd
 
 <utils_1>
 None
@@ -105,13 +107,21 @@ List of all the source files present in the archived project:-
 
 <sources_1>
 ./9_Handshaking.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd
+./9_Handshaking.srcs/sources_1/new/MEM.vhd
+./9_Handshaking.srcs/sources_1/new/Nodo_A.vhd
+./9_Handshaking.srcs/sources_1/new/Nodo_B.vhd
 ./9_Handshaking.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd
+./9_Handshaking.srcs/sources_1/imports/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd
+./9_Handshaking.srcs/sources_1/imports/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/cont_mod8.vhd
+./9_Handshaking.srcs/sources_1/new/cu_A.vhd
+./9_Handshaking.srcs/sources_1/new/cu_B.vhd
+./9_Handshaking.srcs/sources_1/new/Handshaking_top.vhd
 
 <constrs_1>
 None
 
 <sim_1>
-None
+./9_Handshaking.srcs/sim_1/new/Handshaking_tb.vhd
 
 <utils_1>
 None

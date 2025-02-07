@@ -3,22 +3,28 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Feb  7 10:04:44 2025
-# Process ID: 9628
-# Current directory: C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14232 C:\Users\umber\OneDrive\Desktop\AsDi\4_handshaking\9_Handshaking\9_Handshaking.xpr
-# Log file: C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/vivado.log
-# Journal file: C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking\vivado.jou
-# Running On: LAPTOP-AOM7HOQR, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 2, Host memory: 8316 MB
+# Start of session at: Thu Feb  6 18:12:29 2025
+# Process ID: 26020
+# Current directory: C:/Users/ladyc/Desktop/ASDI/9_Handshaking
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32880 C:\Users\ladyc\Desktop\ASDI\9_Handshaking\9_Handshaking.xpr
+# Log file: C:/Users/ladyc/Desktop/ASDI/9_Handshaking/vivado.log
+# Journal file: C:/Users/ladyc/Desktop/ASDI/9_Handshaking\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.xpr
+open_project C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-25:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/arty-s7-25/E.0/board.xml as part xc7s25csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-s7-50:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/arty-s7-50/B.0/board.xml as part xc7s50csga324-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-10:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/arty-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:arty-z7-20:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/arty-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cmod-s7-25:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/cmod-s7-25/B.0/board.xml as part xc7s25csga225-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-07s:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/cora-z7-07s/B.0/board.xml as part xc7z007sclg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:cora-z7-10:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/cora-z7-10/B.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/eclypse-z7/A.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:eclypse-z7:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/eclypse-z7/B.0/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
@@ -27,28 +33,20 @@ WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 a
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/genesys-zu-3eg/D.0/board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/genesys-zu-5ev/C.0/board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zedboard:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/zedboard/1.3/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-10:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/zybo-z7-10/A.0/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo-z7-20:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/zybo-z7-20/A.0/board.xml as part xc7z020clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/zybo/B.3/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part digilentinc.com:zybo:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/boards/board_files/zybo/B.4/board.xml as part xc7z010clg400-1 specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
-WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
@@ -112,96 +110,441 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.gen/sources_1'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:38 . Memory (MB): peak = 1461.023 ; gain = 423.336
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:14 . Memory (MB): peak = 1555.727 ; gain = 464.699
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Feb  7 10:56:08 2025...
-ing/9_Handshaking.srcs/sim_1/new
+archive_project C:/Users/ladyc/Desktop/ASDI/9_Handshaking.xpr.zip -temp_dir C:/Users/ladyc/Desktop/ASDI/9_Handshaking/.Xil/Vivado-26020-MadamImAdam -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/.Xil/Vivado-26020-MadamImAdam' for archiving project
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/.Xil/Vivado-26020-MadamImAdam/PrjAr/_X_'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/ladyc/Desktop/ASDI/9_Handshaking/.Xil/Vivado-26020-MadamImAdam/PrjAr/_X_/9_Handshaking.cache/ip 
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/ladyc/Desktop/ASDI/9_Handshaking.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+close [ open C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_A.vhd w ]
+add_files C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_A.vhd
+close [ open C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_B.vhd w ]
+add_files C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_B.vhd
+update_compile_order -fileset sources_1
+set_property top Nodo_B [current_fileset]
+update_compile_order -fileset sources_1
+file mkdir C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodoA.vhd w ]
-add_files -fileset sim_1 C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodoA.vhd
+close [ open C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodo_B.vhd w ]
+add_files -fileset sim_1 C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodo_B.vhd
 update_compile_order -fileset sim_1
-set_property top TB_Nodo_A [get_filesets sim_1]
+update_compile_order -fileset sources_1
+set_property top Nodo_B_tb [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 update_compile_order -fileset sim_1
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'TB_Nodo_A'
+INFO: [Vivado 12-12493] Simulation top is 'Nodo_B_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'TB_Nodo_A' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Nodo_B_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TB_Nodo_A_vhdl.prj"
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nodo_B_tb_vhdl.prj"
 ECHO disattivato.
 ECHO disattivato.
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'myFA'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/MEM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mem_out'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RCA_Nbit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/cont_mod8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cont_mod4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cu_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log"
+ECHO disattivato.
+ECHO disattivato.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-8944] expression has 2 elements; formal 'addr' expects 4 [C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_B.vhd:115]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit nodo_b_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1642.879 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Nodo_B_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nodo_B_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nodo_B_tb_vhdl.prj"
+ECHO disattivato.
+ECHO disattivato.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/MEM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mem_out'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log"
+ECHO disattivato.
+ECHO disattivato.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-8944] expression has 2 elements; formal 'addr' expects 4 [C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_B.vhd:115]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit nodo_b_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Nodo_B_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nodo_B_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nodo_B_tb_vhdl.prj"
+ECHO disattivato.
+ECHO disattivato.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log"
+ECHO disattivato.
+ECHO disattivato.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-666] expression has 3 elements; expected 2 [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/cont_mod8.vhd:31]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit nodo_b_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Nodo_B_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nodo_B_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nodo_B_tb_vhdl.prj"
+ECHO disattivato.
+ECHO disattivato.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/cont_mod8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cont_mod4'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log"
+ECHO disattivato.
+ECHO disattivato.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.cu_B [cu_b_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_out [mem_out_default]
+Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
+Compiling architecture dataflow of entity xil_defaultlib.myFA [myfa_default]
+Compiling architecture dataflow of entity xil_defaultlib.RCA_Nbit [\RCA_Nbit(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.Nodo_B [nodo_b_default]
+Compiling architecture testbench of entity xil_defaultlib.nodo_b_tb
+Built simulation snapshot Nodo_B_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nodo_B_tb_behav -key {Behavioral:sim_1:Functional:Nodo_B_tb} -tclbatch {Nodo_B_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Nodo_B_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nodo_B_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1745.859 ; gain = 96.391
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Nodo_B_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nodo_B_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nodo_B_tb_vhdl.prj"
+ECHO disattivato.
+ECHO disattivato.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cu_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log"
+ECHO disattivato.
+ECHO disattivato.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.cu_B [cu_b_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_out [mem_out_default]
+Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
+Compiling architecture dataflow of entity xil_defaultlib.myFA [myfa_default]
+Compiling architecture dataflow of entity xil_defaultlib.RCA_Nbit [\RCA_Nbit(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.Nodo_B [nodo_b_default]
+Compiling architecture testbench of entity xil_defaultlib.nodo_b_tb
+Built simulation snapshot Nodo_B_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nodo_B_tb_behav -key {Behavioral:sim_1:Functional:Nodo_B_tb} -tclbatch {Nodo_B_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Nodo_B_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Test completato
+Time: 750 ns  Iteration: 0  Process: /Nodo_B_tb/line__51  File: C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodo_B.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nodo_B_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1746.504 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Nodo_B_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nodo_B_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Nodo_B_tb_vhdl.prj"
+ECHO disattivato.
+ECHO disattivato.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log"
+ECHO disattivato.
+ECHO disattivato.
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nodo_B_tb_behav xil_defaultlib.Nodo_B_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.cu_B [cu_b_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_out [mem_out_default]
+Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
+Compiling architecture dataflow of entity xil_defaultlib.myFA [myfa_default]
+Compiling architecture dataflow of entity xil_defaultlib.RCA_Nbit [\RCA_Nbit(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.Nodo_B [nodo_b_default]
+Compiling architecture testbench of entity xil_defaultlib.nodo_b_tb
+Built simulation snapshot Nodo_B_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nodo_B_tb_behav -key {Behavioral:sim_1:Functional:Nodo_B_tb} -tclbatch {Nodo_B_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Nodo_B_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: Test completato
+Time: 750 ns  Iteration: 0  Process: /Nodo_B_tb/line__53  File: C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodo_B.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nodo_B_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/Handshaking_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/Handshaking_tb.vhd
+update_compile_order -fileset sim_1
+set_property top Handshaking [current_fileset]
+set_property top Handshaking_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Handshaking_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: Impossibile accedere al file. Il file è utilizzato da un altro processo: "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Handshaking_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Handshaking_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Handshaking_tb_vhdl.prj"
+ECHO disattivato.
+ECHO disattivato.
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Handshaking_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Handshaking'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'Nodo_A'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/imports/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'ROM'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/imports/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/cont_mod8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'cont_mod4'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_A.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_A.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'cu_A'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodoA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'TB_Nodo_A'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/Handshaking_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Handshaking_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Nodo_A_behav xil_defaultlib.TB_Nodo_A -log elaborate.log"
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Handshaking_tb_behav xil_defaultlib.Handshaking_tb -log elaborate.log"
 ECHO disattivato.
 ECHO disattivato.
 Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Nodo_A_behav xil_defaultlib.TB_Nodo_A -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-666] expression has 3 elements; expected 2 [C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/imports/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/cont_mod8.vhd:31]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_nodo_a in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1525.762 ; gain = 0.000
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'TB_Nodo_A'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'TB_Nodo_A' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj TB_Nodo_A_vhdl.prj"
-ECHO disattivato.
-ECHO disattivato.
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/imports/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/cont_mod8.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'cont_mod4'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Nodo_A_behav xil_defaultlib.TB_Nodo_A -log elaborate.log"
-ECHO disattivato.
-ECHO disattivato.
-Vivado Simulator v2023.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Nodo_A_behav xil_defaultlib.TB_Nodo_A -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Handshaking_tb_behav xil_defaultlib.Handshaking_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -218,268 +561,22 @@ Compiling architecture behavioral of entity xil_defaultlib.cu_A [cu_a_default]
 Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
 Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
 Compiling architecture structural of entity xil_defaultlib.Nodo_A [nodo_a_default]
-Compiling architecture behavioral of entity xil_defaultlib.tb_nodo_a
-Built simulation snapshot TB_Nodo_A_behav
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1525.762 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "TB_Nodo_A_behav -key {Behavioral:sim_1:Functional:TB_Nodo_A} -tclbatch {TB_Nodo_A.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source TB_Nodo_A.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_Nodo_A_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1548.070 ; gain = 22.309
-set_property top tb_Nodo_A [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Nodo_A'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-boost::filesystem::remove: Impossibile accedere al file. Il file è utilizzato da un altro processo: "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/simulate.log"
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Nodo_A'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Nodo_A' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Nodo_A_vhdl.prj"
-ECHO disattivato.
-ECHO disattivato.
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Nodo_A'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodoA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_Nodo_A'
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log"
-ECHO disattivato.
-ECHO disattivato.
-Vivado Simulator v2023.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-8944] expression has 3 elements; formal 'stato' expects 2 [C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:79]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_nodo_a in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Nodo_A'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Nodo_A' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Nodo_A_vhdl.prj"
-ECHO disattivato.
-ECHO disattivato.
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Nodo_A'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log"
-ECHO disattivato.
-ECHO disattivato.
-Vivado Simulator v2023.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.cu_A [cu_a_default]
-Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
-Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
-Compiling architecture structural of entity xil_defaultlib.Nodo_A [nodo_a_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_nodo_a
-Built simulation snapshot tb_Nodo_A_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Nodo_A_behav -key {Behavioral:sim_1:Functional:tb_Nodo_A} -tclbatch {tb_Nodo_A.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_Nodo_A.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Nodo_A_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1552.480 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Nodo_A'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Nodo_A' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Nodo_A_vhdl.prj"
-ECHO disattivato.
-ECHO disattivato.
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodoA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_Nodo_A'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log"
-ECHO disattivato.
-ECHO disattivato.
-Vivado Simulator v2023.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.cu_A [cu_a_default]
-Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
-Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
-Compiling architecture structural of entity xil_defaultlib.Nodo_A [nodo_a_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_nodo_a
-Built simulation snapshot tb_Nodo_A_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Nodo_A_behav -key {Behavioral:sim_1:Functional:tb_Nodo_A} -tclbatch {tb_Nodo_A.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_Nodo_A.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Nodo_A_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1552.480 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Nodo_A'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Nodo_A' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Nodo_A_vhdl.prj"
-ECHO disattivato.
-ECHO disattivato.
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Nodo_A'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sim_1/new/tb_nodoA.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'tb_Nodo_A'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log"
-ECHO disattivato.
-ECHO disattivato.
-Vivado Simulator v2023.1
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling package std.standard
-Compiling package std.textio
-Compiling package ieee.std_logic_1164
-Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_unsigned
-Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.cu_A [cu_a_default]
-Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
-Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
-Compiling architecture structural of entity xil_defaultlib.Nodo_A [nodo_a_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_nodo_a
-Built simulation snapshot tb_Nodo_A_behav
+Compiling architecture behavioral of entity xil_defaultlib.cu_B [cu_b_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_out [mem_out_default]
+Compiling architecture dataflow of entity xil_defaultlib.myFA [myfa_default]
+Compiling architecture dataflow of entity xil_defaultlib.RCA_Nbit [\RCA_Nbit(n=4)\]
+Compiling architecture structural of entity xil_defaultlib.Nodo_B [nodo_b_default]
+Compiling architecture structural of entity xil_defaultlib.Handshaking [handshaking_default]
+Compiling architecture testbench of entity xil_defaultlib.handshaking_tb
+Built simulation snapshot Handshaking_tb_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Nodo_A_behav -key {Behavioral:sim_1:Functional:tb_Nodo_A} -tclbatch {tb_Nodo_A.tcl} -log {simulate.log}"
+   with args "Handshaking_tb_behav -key {Behavioral:sim_1:Functional:Handshaking_tb} -tclbatch {Handshaking_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source tb_Nodo_A.tcl
+source Handshaking_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -490,38 +587,42 @@ source tb_Nodo_A.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Nodo_A_behav' loaded.
+Note: Test completato, verifica dei segnali
+Time: 580 ns  Iteration: 0  Process: /Handshaking_tb/line__54  File: C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/Handshaking_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Handshaking_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1552.480 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1746.504 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_Nodo_A'
+INFO: [Vivado 12-12493] Simulation top is 'Handshaking_tb'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2023.1/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_Nodo_A' in fileset 'sim_1'...
+INFO: [SIM-utils-54] Inspecting design source files for 'Handshaking_tb' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xvhdl --incr --relax -prj tb_Nodo_A_vhdl.prj"
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Handshaking_tb_vhdl.prj"
 ECHO disattivato.
 ECHO disattivato.
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_A.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'cu_A'
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Handshaking_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Handshaking'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/Handshaking_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Handshaking_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log"
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Handshaking_tb_behav xil_defaultlib.Handshaking_tb -log elaborate.log"
 ECHO disattivato.
 ECHO disattivato.
 Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Handshaking_tb_behav xil_defaultlib.Handshaking_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -538,16 +639,22 @@ Compiling architecture behavioral of entity xil_defaultlib.cu_A [cu_a_default]
 Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
 Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
 Compiling architecture structural of entity xil_defaultlib.Nodo_A [nodo_a_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_nodo_a
-Built simulation snapshot tb_Nodo_A_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Compiling architecture behavioral of entity xil_defaultlib.cu_B [cu_b_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_out [mem_out_default]
+Compiling architecture dataflow of entity xil_defaultlib.myFA [myfa_default]
+Compiling architecture dataflow of entity xil_defaultlib.RCA_Nbit [\RCA_Nbit(n=4)\]
+Compiling architecture structural of entity xil_defaultlib.Nodo_B [nodo_b_default]
+Compiling architecture structural of entity xil_defaultlib.Handshaking [handshaking_default]
+Compiling architecture testbench of entity xil_defaultlib.handshaking_tb
+Built simulation snapshot Handshaking_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/umber/OneDrive/Desktop/AsDi/4_handshaking/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_Nodo_A_behav -key {Behavioral:sim_1:Functional:tb_Nodo_A} -tclbatch {tb_Nodo_A.tcl} -log {simulate.log}"
+   with args "Handshaking_tb_behav -key {Behavioral:sim_1:Functional:Handshaking_tb} -tclbatch {Handshaking_tb.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source tb_Nodo_A.tcl
+source Handshaking_tb.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -558,10 +665,24 @@ source tb_Nodo_A.tcl
 #   }
 # }
 # run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Nodo_A_behav' loaded.
+Note: Test completato, verifica dei segnali
+Time: 580 ns  Iteration: 0  Process: /Handshaking_tb/line__54  File: C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/Handshaking_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Handshaking_tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 2618.363 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri Feb  7 11:09:16 2025...
+archive_project C:/Users/ladyc/Desktop/ASDI/9_Handshaking.xpr.zip -temp_dir C:/Users/ladyc/Desktop/ASDI/9_Handshaking/.Xil/Vivado-26020-MadamImAdam -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/.Xil/Vivado-26020-MadamImAdam' for archiving project
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/ladyc/Desktop/ASDI/9_Handshaking/.Xil/Vivado-26020-MadamImAdam/PrjAr/_X_'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/ladyc/Desktop/ASDI/9_Handshaking/.Xil/Vivado-26020-MadamImAdam/PrjAr/_X_/9_Handshaking.cache/ip 
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

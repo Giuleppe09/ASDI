@@ -1,7 +1,7 @@
 Vivado Simulator v2023.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_Nodo_A_behav xil_defaultlib.tb_Nodo_A -log elaborate.log 
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Handshaking_tb_behav xil_defaultlib.Handshaking_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -18,5 +18,11 @@ Compiling architecture behavioral of entity xil_defaultlib.cu_A [cu_a_default]
 Compiling architecture behavioural of entity xil_defaultlib.cont_mod4 [cont_mod4_default]
 Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
 Compiling architecture structural of entity xil_defaultlib.Nodo_A [nodo_a_default]
-Compiling architecture behavior of entity xil_defaultlib.tb_nodo_a
-Built simulation snapshot tb_Nodo_A_behav
+Compiling architecture behavioral of entity xil_defaultlib.cu_B [cu_b_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_out [mem_out_default]
+Compiling architecture dataflow of entity xil_defaultlib.myFA [myfa_default]
+Compiling architecture dataflow of entity xil_defaultlib.RCA_Nbit [\RCA_Nbit(n=4)\]
+Compiling architecture structural of entity xil_defaultlib.Nodo_B [nodo_b_default]
+Compiling architecture structural of entity xil_defaultlib.Handshaking [handshaking_default]
+Compiling architecture testbench of entity xil_defaultlib.handshaking_tb
+Built simulation snapshot Handshaking_tb_behav

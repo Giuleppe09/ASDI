@@ -12,7 +12,7 @@ entity cu_A is
         REQ_out: out std_logic;
         ACK_in: in std_logic; 
         
-        --Segnali interni all'entità A
+        --Segnali interni all'entit? A
         count_in: in std_logic_vector(1 downto 0);
         rst_count: out std_logic; --Da dare al contatore.std_logic
         en_count: out std_logic; --Da dare al end
@@ -25,8 +25,8 @@ end cu_A;
 
 architecture Behavioral of cu_A is
 
-    --Abbiamo supposto la possibilità di eseguire più volte il ciclo, cioè di non terminare dopo una singola esecuzione.
-    --Per questo non è previsto uno stato di fine
+    --Abbiamo supposto la possibilit? di eseguire pi? volte il ciclo, cio? di non terminare dopo una singola esecuzione.
+    --Per questo non ? previsto uno stato di fine
     type state is (idle, WRITE_ON_BUS, SEND_REQ , WAIT_4_ACK , OK_ACK, WAIT_4_DONE, CHECK_COUNT);--SENT NON SERVE PENSO
 	signal current_state,next_state: state;
 
@@ -46,7 +46,7 @@ architecture Behavioral of cu_A is
 			  
 		
     comb: process(current_state, start, ACK_in) 
-    --Va messo anche il reset no? no perchè già sta in reg_stato però comunque devo poter resettare il contatore lì.
+    --Va messo anche il reset no? no perch? gi? sta in reg_stato per? comunque devo poter resettare il contatore l?.
     --Dunque in idle tengo sempre un reset_count='1'
         begin 
             

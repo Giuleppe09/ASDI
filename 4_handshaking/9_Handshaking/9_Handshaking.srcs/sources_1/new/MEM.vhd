@@ -9,7 +9,7 @@ entity mem_out is
         RST: in std_logic;
         read : in std_logic; --segnale di lettura
         write: in std_logic; -- Segnale di scrittura
-        ADDR : in std_logic_vector(3 downto 0);
+        ADDR : in std_logic_vector(1 downto 0);
         data_in: in std_logic_vector(3 downto 0);
         data_out: out std_logic_vector(3 downto 0)
     );

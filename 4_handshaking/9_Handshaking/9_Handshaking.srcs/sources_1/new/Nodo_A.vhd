@@ -27,7 +27,7 @@ architecture Structural of Nodo_A is
         REQ_out: out std_logic;
         ACK_in: in std_logic; 
         
-        --Segnali interni all'entità A
+        --Segnali interni all'entit? A
         count_in: in std_logic_vector(1 downto 0);
         rst_count: out std_logic; --Da dare al contatore.std_logic
         en_count: out std_logic; --Da dare al end
@@ -87,7 +87,7 @@ begin
         clock=>CLK,
         reset=> temp_rst_count,
         count_in => temp_en_count,
-        count => temp_count_in --uscita del contatore va in ingresso all'unità di controllo.
+        count => temp_count_in --uscita del contatore va in ingresso all'unit? di controllo.
     );
     
     ROM_A: ROM port map(
