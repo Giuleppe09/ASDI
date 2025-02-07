@@ -11,7 +11,7 @@ entity cont_mod4 is
 end cont_mod4;
 
 architecture behavioural of cont_mod4 is
-	signal c: std_logic_vector(2 downto 0) := (others=>'0');
+	signal c: std_logic_vector(1 downto 0) := (others=>'0');
 	
 	begin	
 	CM8: process(clock)

@@ -1,5 +1,3 @@
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -10,7 +8,9 @@ entity Nodo_A is
         START : in  std_logic;
         ACK   : in  std_logic;
         REQ   : out std_logic;
-        BUS_out: out std_logic_vector(3 downto 0)  := (others => '0') 
+        BUS_out: out std_logic_vector(3 downto 0)  := (others => '0') ;
+        stato: out std_logic_vector(2 downto 0);
+        read: out std_logic
     );
 end Nodo_A;
 
@@ -31,7 +31,12 @@ architecture Structural of Nodo_A is
         count_in: in std_logic_vector(1 downto 0);
         rst_count: out std_logic; --Da dare al contatore.std_logic
         en_count: out std_logic; --Da dare al end
-        read: out std_logic --Da dare alla ROM
+        read: out std_logic; --Da dare alla ROM
+        
+        --Segnali per debug
+        stato: out std_logic_vector(2 downto 0)
+       
+        
     );
     end component;
     
@@ -56,12 +61,13 @@ architecture Structural of Nodo_A is
     signal temp_rst_count: std_logic;
     signal temp_en_count: std_logic;
     signal temp_read: std_logic;
+    
   
 begin
 
     
     --temp_count_in <= count_in;
-   
+    read <= temp_read;
     
     ControlUnit_A: cu_A port map(
         start => start,
@@ -73,7 +79,8 @@ begin
         count_in => temp_count_in,
         rst_count => temp_rst_count,
         en_count => temp_en_count,
-        read => temp_read  
+        read => temp_read,
+        stato => stato
     );
     
     Counter: cont_mod4 port map(
