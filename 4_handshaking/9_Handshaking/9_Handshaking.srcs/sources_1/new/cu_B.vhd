@@ -11,14 +11,10 @@ entity cu_B is
         REQ_in: in std_logic;
         ACK_out: out std_logic; 
         
-        --Segnali interni all'entità A
-        count_in: in std_logic_vector(1 downto 0);
-        rst_count: out std_logic; --Da dare al contatore.std_logic
-        en_count: out std_logic; --Da dare al end
-        read: out std_logic; --Da dare alla MEM
+       
         write: out std_logic; --Da dare alla MEM
         --per debug
-        stato: out std_logic_vector(2 downto 0)
+        stato: out std_logic_vector(1 downto 0)
     );
 end cu_B;
 
@@ -26,7 +22,7 @@ architecture Behavioral of cu_B is
 
     --Abbiamo supposto la possibilit? di eseguire più volte il ciclo, cioè di non terminare dopo una singola esecuzione.
     --Per questo non ? previsto uno stato di fine
-    type state is (WAIT_4_REQ, SEND_ACK , OK_read, WRITE_inMEM , DONE , CHECK_COUNT, FINE);
+    type state is (WAIT_4_REQ, SEND_ACK ,WRITE_in_MEM);
 	signal current_state,next_state: state;
 
 	begin
@@ -34,7 +30,7 @@ architecture Behavioral of cu_B is
 			  begin
 			  if(clk'event and clk='1') then
 		         if(rst='1') then 
-				    current_state <=FINE;
+				    current_state <=WAIT_4_REQ;
 			    else 
 				    current_state <=next_state;
 			     end if;
@@ -45,12 +41,8 @@ architecture Behavioral of cu_B is
     comb: process(current_state, REQ_in) 
     
         begin 
-            --resetto i segnali interni al clock successivo
-            rst_count <='0';
-            read<='0';
+          
             write<='0';
-            en_count <= '0';
-            
            
             CASE current_state is
                 WHEN WAIT_4_REQ =>
@@ -63,36 +55,18 @@ architecture Behavioral of cu_B is
                     
                   
                  WHEN SEND_ACK =>
-                    read <='1'; 
+                   
                     ACK_out <= '1'; --lo alziamo
-                    next_state <= OK_read;
+                    next_state <= WRITE_IN_MEM;
                  
-                 WHEN OK_read=>
-                    next_state <= WRITE_inMEM;
-                 
-                 WHEN WRITE_inMEM =>
+                 WHEN WRITE_IN_MEM => -- Protocollo di handshaking semplice
+                    ACK_out <= '0'; 
                     write<='1';
-                    next_state <= DONE;
-                    
-                 WHEN DONE =>
-                    ACK_out <='0'; --abbasso ACK quando ho finito 
-                    next_state <= CHECK_COUNT;
-                    
-                 WHEN CHECK_COUNT =>
-                    en_count <= '1';
-                    
-                    if(count_in ="11")then
-                        next_state <= FINE;
-                    else 
-                        next_state <= WAIT_4_REQ;
-                    end if;
-                  
-                WHEN FINE =>
-                    rst_count <='1';
                     next_state <= WAIT_4_REQ;
                     
+                    
                 WHEN others =>
-		          next_state <= FINE;
+		          next_state <= WAIT_4_REQ;
 		
 		end CASE;
 		
@@ -100,14 +74,10 @@ architecture Behavioral of cu_B is
         
          -- Codifica dello stato corrente per debug 
         with current_state select 
-        stato <= "000" when WAIT_4_REQ,  
-                "001" when SEND_ACK ,  
-                "010" when OK_read, 
-                "011" when WRITE_inMEM ,  
-                "100" when DONE ,  
-                "101" when CHECK_COUNT, 
-                "110" when FINE,
-                "111" when others;
+        stato <= "00" when WAIT_4_REQ,  
+                "01" when SEND_ACK ,  
+                "10" when WRITE_in_MEM,
+                "11" when others;
 
 
 end Behavioral;

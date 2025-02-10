@@ -7,33 +7,27 @@ entity mem_out is
     port(
         CLK: in std_logic;
         RST: in std_logic;
-        read : in std_logic; --segnale di lettura
-        write: in std_logic; -- Segnale di scrittura
-        ADDR : in std_logic_vector(1 downto 0);
+        write: in std_logic;  -- Segnale di scrittura
         data_in: in std_logic_vector(3 downto 0);
         data_out: out std_logic_vector(3 downto 0)
     );
 end mem_out;
 
 architecture Behavioral of mem_out is
-    type mem_type is array (0 to 3) of std_logic_vector(3 downto 0);
-    signal MEM : mem_type := (others => (others => '0')); -- Inizializza tutta la memoria a 0
+    signal MEM: std_logic_vector(3 downto 0) := (others => '0'); -- Registro a 4 bit
 begin
-
     process(CLK)
     begin
         if rising_edge(CLK) then
-            if RST = '1' then  -- Reset sincrono: azzera tutta la memoria
-                for i in 0 to 3 loop
-                    MEM(i) <= (others => '0');
-                end loop;
+            if RST = '1' then  -- Reset sincrono: azzera il registro
+                MEM <= (others => '0');
             elsif write = '1' then  -- Scrittura sincrona
-                MEM(conv_integer(ADDR)) <= data_in;
+                MEM <= data_in;
             end if;
         end if;
     end process;
-    
-    -- Lettura sincrona (se richiesta), altrimenti può essere diretta
-    data_out <= MEM(conv_integer(ADDR));
+
+    -- Uscita sempre uguale al valore salvato nel registro
+    data_out <= MEM;
 
 end Behavioral;

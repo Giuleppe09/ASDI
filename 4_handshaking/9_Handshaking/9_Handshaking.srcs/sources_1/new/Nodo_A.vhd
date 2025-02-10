@@ -5,10 +5,13 @@ entity Nodo_A is
     Port (  
         CLK   : in  std_logic;
         RST   : in  std_logic;
-        START : in  std_logic;
+        START : in  std_logic; -- esterno
+        
+        --Per HandShaking
         ACK   : in  std_logic;
         REQ   : out std_logic;
         BUS_out: out std_logic_vector(3 downto 0)  := (others => '0') ;
+        -- Per Debug
         stato: out std_logic_vector(2 downto 0);
         read: out std_logic
     );
@@ -18,7 +21,7 @@ end Nodo_A;
 architecture Structural of Nodo_A is
     component cu_A is 
      Port ( 
-        --Segnali esterni.
+        
         start: in std_logic;
         CLK: in std_logic;
         RST: in std_logic;
@@ -27,8 +30,8 @@ architecture Structural of Nodo_A is
         REQ_out: out std_logic;
         ACK_in: in std_logic; 
         
-        --Segnali interni all'entit? A
-        count_in: in std_logic_vector(1 downto 0);
+        --Segnali interni all'entità 
+        count_in: in std_logic_vector(2 downto 0); -- Deve entrare nel counter (sistema disegno)
         rst_count: out std_logic; --Da dare al contatore.std_logic
         en_count: out std_logic; --Da dare al end
         read: out std_logic; --Da dare alla ROM
@@ -40,24 +43,24 @@ architecture Structural of Nodo_A is
     );
     end component;
     
-    component cont_mod4 is Port(
+    component cont_mod8 is Port(
         clock, reset: in std_logic;
 	      count_in: in std_logic; --Magari cambiamo nome
-		  count: out std_logic_vector(1 downto 0)
-		  --Conteggio fino a 4 si codifica con 2 bit
+		  count: out std_logic_vector(2 downto 0)
+		  --Conteggio fino a 8 si codifica con 3 bit
     );
     end component;
     
     component ROM is Port(
           CLK: in std_logic;                                                      
-          read : in std_logic; --segnale di lettura                               
-          ADDR : in std_logic_vector(1 downto 0); --2 bit di indirizzo per acceder
-                                                  --sono inseriti tramite gli swit
-          DATA : out std_logic_vector(3 downto 0) -- dato su 4 bit letto dalla ROM
+          read : in std_logic; --Read Sincrona                            
+          ADDR : in std_logic_vector(2 downto 0); --3 bit di indirizzo per accedere a 8 locazioni
+                                                  
+          DATA : out std_logic_vector(3 downto 0) -- dato su 4 bit 
     );
     end component;
     
-    signal temp_count_in: std_logic_vector(1 downto 0);
+    signal temp_count_in: std_logic_vector(2 downto 0);
     signal temp_rst_count: std_logic;
     signal temp_en_count: std_logic;
     signal temp_read: std_logic;
@@ -66,7 +69,7 @@ architecture Structural of Nodo_A is
 begin
 
     
-    --temp_count_in <= count_in;
+    
     read <= temp_read;
     
     ControlUnit_A: cu_A port map(
@@ -77,13 +80,13 @@ begin
         ACK_in=> ACK,
         
         count_in => temp_count_in,
-        rst_count => temp_rst_count,
-        en_count => temp_en_count,
+        rst_count => temp_rst_count, --Uscita da dare al contatore (sistemare disegno)
+        en_count => temp_en_count, 
         read => temp_read,
         stato => stato
     );
     
-    Counter: cont_mod4 port map(
+    Counter: cont_mod8 port map(
         clock=>CLK,
         reset=> temp_rst_count,
         count_in => temp_en_count,

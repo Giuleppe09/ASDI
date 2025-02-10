@@ -10,11 +10,12 @@ entity Nodo_B is
         REQ   : in std_logic;
         ACK   : out  std_logic;
         BUS_in: in std_logic_vector(3 downto 0);
-        output: out std_logic_vector(3 downto 0);
+        
         --per debug
-        read: out std_logic;
+        output: out std_logic_vector(3 downto 0);
+        --read: out std_logic;
         write: out std_logic;
-        stato: out std_logic_vector(2 downto 0)
+        stato: out std_logic_vector(1 downto 0)
     );
 end Nodo_B;
 
@@ -24,38 +25,27 @@ architecture Structural of Nodo_B is
         Port ( 
             --Segnali esterni.
             CLK: in std_logic;
-            RST: in std_logic;
+            RST: in std_logic; -- che poi resetta il registro (?)
             
             --Segnali Per Handshaking completo
             REQ_in: in std_logic;
             ACK_out: out std_logic; 
             
-            --Segnali interni all'entità A
-            count_in: in std_logic_vector(1 downto 0);
-            rst_count: out std_logic; --Da dare al contatore.std_logic
-            en_count: out std_logic; --Da dare al end
-            read: out std_logic; --Da dare alla MEM
-            write: out std_logic; --Da dare alla MEM
+           
+            
+            write: out std_logic; --Da dare al registro accumulatore
             --per debug
-            stato: out std_logic_vector(2 downto 0)
+            stato: out std_logic_vector(1 downto 0)
         );
-    end component;
-    
-    component cont_mod4 is Port(
-        clock, reset: in std_logic;
-	      count_in: in std_logic; --Magari cambiamo nome
-		  count: out std_logic_vector(1 downto 0)
-		  --Conteggio fino a 4 si codifica con 2 bit
-    );
     end component;
     
     component mem_out is
         port(
             CLK: in std_logic;
             RST: in std_logic;
-            read : in std_logic; --segnale di lettura
+            
             write: in std_logic; -- Segnale di scrittura
-            ADDR : in std_logic_vector(1 downto 0);
+         
             data_in: in std_logic_vector(3 downto 0);
             data_out: out std_logic_vector(3 downto 0)
         );
@@ -66,7 +56,7 @@ architecture Structural of Nodo_B is
         port(
             OP_A_RCA: in std_logic_vector(N-1 downto 0);
             OP_B_RCA: in std_logic_vector(N-1 downto 0);
-            CIN_RCA: in std_logic;
+            CIN_RCA: in std_logic; -- 0
             
             S_RCA: out std_logic_vector(N-1 downto 0);
             COUT_RCA: out std_logic;
@@ -98,11 +88,7 @@ begin
         REQ_in => REQ,
         ACK_out => ACK,
         
-        --Segnali interni all'entità A
-        count_in => temp_count_in,
-        rst_count => temp_rst_count,
-        en_count => temp_en_count,
-        read => temp_read,
+      
         write => temp_write,
         --per debug
         stato => stato
@@ -111,21 +97,16 @@ begin
     MEM: mem_out port map(
         CLK => CLK,
         RST => RST,
-        read => temp_read,
+     
         write => temp_write,
-        ADDR => temp_count_in,
+        
         data_in => temp_S,
         data_out => temp_Y 
     );
     
-    CONT4: cont_mod4 port map(
-        clock => CLK,
-        reset => temp_rst_count,
-        count_in => temp_en_count,
-        count => temp_count_in
-    );
+   
     
-    ADDER: RCA_Nbit port map(
+    ADDER: RCA_Nbit port map( -- Da cambiare con il carry look ahead
             OP_A_RCA => BUS_in,
             OP_B_RCA => temp_Y,
             CIN_RCA => '0',
@@ -135,9 +116,8 @@ begin
             OV => temp_ov
         );
     
+    
     output <= temp_Y;
-    --Per debug
-    read <= temp_read;
     write <= temp_write;
     
 end Structural;
