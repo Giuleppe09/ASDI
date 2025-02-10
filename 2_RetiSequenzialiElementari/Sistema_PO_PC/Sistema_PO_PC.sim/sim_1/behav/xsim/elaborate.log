@@ -15,7 +15,7 @@ Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_unsigned
 Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.Control_unit [control_unit_default]
-Compiling architecture behavioral of entity xil_defaultlib.Counter [counter_default]
+Compiling architecture behavioural of entity xil_defaultlib.cont_mod16 [cont_mod16_default]
 Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
 Compiling architecture dataflow of entity xil_defaultlib.myFA [myfa_default]
 Compiling architecture dataflow of entity xil_defaultlib.RCA_Nbit [rca_nbit_default]

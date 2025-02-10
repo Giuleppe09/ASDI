@@ -8,7 +8,7 @@ vhdl xil_defaultlib  \
 "../../../../Sistema_PO_PC.srcs/sources_1/imports/Progetto_ASDI/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/new/Sistema_ROM_M.vhd" \
 "../../../../Sistema_PO_PC.srcs/sources_1/imports/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd" \
 "../../../../Sistema_PO_PC.srcs/sources_1/new/Sistema_PO_PC.vhd" \
-"../../../../Sistema_PO_PC.srcs/sim_1/new/Sistema_PO_PC_tb.vhd" \
+"../../../../Sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd" \
 
 # Do not sort compile order
 nosort

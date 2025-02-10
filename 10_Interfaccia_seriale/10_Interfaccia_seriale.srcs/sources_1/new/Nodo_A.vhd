@@ -9,12 +9,7 @@ entity Nodo_A is
         RXD   : in  std_logic;
         TXD   : out std_logic;
         stato: out std_logic_vector(2 downto 0);
-        read: out std_logic;
-        
-        --segnali per debug
-        WR_deb: out std_logic;
-        TBE_deb: out std_logic
-        
+        read: out std_logic
     );
 end Nodo_A;
 
@@ -32,7 +27,7 @@ architecture Structural of Nodo_A is
         TBE : in std_logic; -- Da leggere dalla UART
         
         --Segnali interni all'entità
-        count_in: in std_logic_vector(2 downto 0);
+        count_in: in std_logic_vector(1 downto 0);
         rst_count: out std_logic; --Da dare al contatore.std_logic
         en_count: out std_logic; --Da dare al end
         
@@ -53,7 +48,7 @@ architecture Structural of Nodo_A is
     
     component ROM is Port(
           CLK: in std_logic;                                                      
-                                       
+          read : in std_logic; --segnale di lettura                               
           ADDR : in std_logic_vector(2 downto 0); --3 bit di indirizzo per acceder
                                                   --sono inseriti tramite gli swit
           DATA : out std_logic_vector(7 downto 0) -- dato su 8 bit letto dalla ROM
@@ -80,22 +75,18 @@ architecture Structural of Nodo_A is
     
     signal temp_WR: std_logic;
     signal temp_TBE: std_logic;
-    signal temp_DBIN : std_logic_vector (7 downto 0);-- per passare i dati alla UART
-    signal temp_count_in: std_logic_vector(2 downto 0);
+    signal temp_DBOUT : std_logic_vector (7 downto 0);
+    signal temp_count_in: std_logic_vector(1 downto 0);
     signal temp_rst_count: std_logic;
     signal temp_en_count: std_logic;
     signal temp_read: std_logic;
     
-    signal dbout_n : std_logic_vector(7 downto 0); 
-    --Ci serve solo per mappare l'uscita della UART ma in realtà non riceve mai nulla dall'esterno  
   
 begin
-    --Per debug
-    TBE_DEB<=temp_tbe;
-    WR_DEB<=temp_wr;
-        
-     
+
     
+    --temp_count_in <= count_in;
+    read <= temp_read;
     
     ControlUnit_A: cu_A port map(
         start => start,
@@ -120,16 +111,17 @@ begin
     
     ROM_A: ROM port map(
         CLK => CLK,
+        read => temp_read,
         ADDR => temp_count_in, --Per poter variare l'indirizzo.
-        DATA => temp_dbin
+        DATA => temp_DBOUT
     );
     
-    UART_A: Rs232RefComp port map(
+    USART_A: Rs232RefComp port map(
         TXD =>TXD,
-        RXD =>RXD, --in ingresso alla UART dall'esterno non c'è nulla
+        RXD =>RXD,
         CLK => CLK,
-        DBIN => temp_DBIN, 
-        DBOUT => dbout_n, --Non ci servono i dati in ingresso
+        DBIN => "00000000",
+        DBOUT => temp_DBOUT,
         TBE	=> temp_TBE,
         RD => '0',
         WR=> temp_WR,

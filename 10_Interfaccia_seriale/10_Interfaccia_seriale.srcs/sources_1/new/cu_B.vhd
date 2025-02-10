@@ -13,7 +13,7 @@ entity cu_B is
        
         
         --Segnali interni all'entità A
-        count_in: in std_logic_vector(2 downto 0);
+        count_in: in std_logic_vector(1 downto 0);
         rst_count: out std_logic; 
         en_count: out std_logic; 
        

@@ -9,7 +9,6 @@ entity Nodo_B is
         RST   : in  std_logic;
         RDA   : in std_logic;
         output: out std_logic_vector(7 downto 0);
-        RXD : in std_logic;
         --per debug
         write: out std_logic;
         stato: out std_logic_vector(2 downto 0)
@@ -25,10 +24,10 @@ architecture Structural of Nodo_B is
             RST: in std_logic;
             
             --Segnali per la comunicazione con la UART
-            RDA: in std_logic; --Potrebbe anche esserci il problema di mapping per cui la pongo inout e via
+            RDA: in std_logic;
             RD: out std_logic;
-            --Segnali interni all'entità B
-            count_in: in std_logic_vector(2 downto 0);
+            --Segnali interni all'entità A
+            count_in: in std_logic_vector(1 downto 0);
             rst_count: out std_logic; --Da dare al contatore.std_logic
             en_count: out std_logic; --Da dare al end
             
@@ -74,19 +73,16 @@ architecture Structural of Nodo_B is
             RST		: in  std_logic	:= '0');			--Master Reset
     end component;
 	
-	
-	signal temp_write: std_logic; -- da cu verso mem
-	
+	--per mem
+	signal temp_read: std_logic;
+	signal temp_write: std_logic;
 	--per counter
 	signal temp_rst_count: std_logic;
 	signal temp_en_count: std_logic;
-	signal temp_count_in: std_logic_vector(2 downto 0);
-	
+	signal temp_count_in: std_logic_vector(1 downto 0);
 	--per UART
-	signal temp_DBOUT : std_logic_vector (7 downto 0);
-	signal TXD_n : std_logic; --Che non serve ma devo pur mappare sta uart.
-	signal temp_RDA: std_logic; --che viene mandato alla CU
-	signal temp_RD: std_logic; --DA CU verso UART
+	signal temp_DBIN : std_logic_vector (7 downto 0);
+	
 begin
 
     Control_unit_B:cu_B port map(
@@ -95,8 +91,8 @@ begin
         RST => RST,
         
         --Segnali Per Handshaking completo
-        RDA => temp_RDA,
-        RD => temp_RD,
+        RDA => RDA,
+        RD => temp_read,
         
         --Segnali interni all'entità A
         count_in => temp_count_in,
@@ -112,24 +108,24 @@ begin
         RST => RST,
         write => temp_write,
         ADDR => temp_count_in,
-        data_in => temp_DBOUT,
-        data_out => output --uscita totale del sistema
+        data_in => temp_DBIN,
+        data_out => output 
     );
     
-    CONT8: cont_mod8 port map(
+    CONT4: cont_mod8 port map(
         clock => CLK,
         reset => temp_rst_count,
         count_in => temp_en_count,
-        count => temp_count_in 
+        count => temp_count_in
     );
     
-    UART_B: Rs232RefComp port map(
-        TXD =>TXD_n, --non serve perchè sto considerando comunicazione simplex
-        RXD =>RXD, --Dall'esterno
+    USART_A: Rs232RefComp port map(
+        TXD =>TXD,
+        RXD =>RXD,
         CLK => CLK,
-        DBIN => "00000000",-- perchè non serve per trasferire
-        DBOUT => temp_DBOUT,
-        RDA	=> temp_RDA, --Dall'esterno del nodo
+        DBIN => temp_DBIN,
+        DBOUT => "00000000",
+        RDA	=> temp_RDA,
         RD => temp_RD,
         WR=> '0',
         RST => RST

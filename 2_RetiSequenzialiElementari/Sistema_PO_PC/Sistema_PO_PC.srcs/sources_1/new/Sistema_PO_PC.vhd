@@ -7,7 +7,11 @@ entity sistemaPO_PC is
         reset: in std_logic;
         start: in std_logic;
         output: out std_logic_vector(3 downto 0);
-        state: out std_logic_vector(2 downto 0) --per verificare in che stato siamo
+        state: out std_logic_vector(2 downto 0); --per verificare in che stato siamo
+        --perr debug
+        rst_cont: out std_logic;    --reset contatore
+        read: out std_logic;        --comandi
+        write: out std_logic
     );
 end sistemaPO_PC;
 
@@ -19,16 +23,16 @@ signal read_temp: std_logic;
 signal write_temp: std_logic;
 signal count_temp: std_logic_vector(3 downto 0); --indirizzi per leggere e scrivere
 signal out_m_temp: std_logic_vector(3 downto 0);
-signal U_max_temp: std_logic;
 
 begin
+    
     --Istanziazione
     unita_controllo: entity work.Control_unit port map(
         --ingressi
         clk => clk,
         start => start,
         reset => reset,
-        U_max => U_max_temp,
+        count => count_temp,
         --uscite per il contatore
         en_cont => en_cont_temp,
         rst_cont => rst_cont_temp,
@@ -38,12 +42,11 @@ begin
         state => state
     ); 
     
-    contatore: entity work.counter port map(
-        CLK => clk,
-        RST => rst_cont_temp,
-        EN => en_cont_temp,     --enable
-        Y => count_temp,        --indirizzi memorie
-        U_max => U_max_temp     --segnale conteggio max
+    contatore: entity work.cont_mod16 port map(
+        clock => clk,
+        reset => rst_cont_temp,
+        count_in => en_cont_temp,     --enable
+        count => count_temp        --indirizzi memorie
     );
     
     ROM_M: entity work.Sistema_ROM_M port map(
@@ -62,5 +65,9 @@ begin
         data_in=> out_m_temp,   --4 bit
         data_out => output      --uscita
     );
+    
+    rst_cont <= rst_cont_temp; --reset contatore
+    read  <= read_temp;        --comandi
+    write <= write_temp;
 
 end Structural;

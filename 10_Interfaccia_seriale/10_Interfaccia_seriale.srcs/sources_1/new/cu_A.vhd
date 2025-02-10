@@ -27,7 +27,7 @@ end cu_A;
 
 architecture Behavioral of cu_A is
 
-    type state is (idle, WRITE_IN_UART,WAIT_4_TBE, CHECK_COUNT);--SENT NON SERVE PENSO
+    type state is (idle, WRITE_IN_UART,WAIT_4_TBE,CHECK_COUNT);--SENT NON SERVE PENSO
 	signal current_state,next_state: state;
 
 	begin
