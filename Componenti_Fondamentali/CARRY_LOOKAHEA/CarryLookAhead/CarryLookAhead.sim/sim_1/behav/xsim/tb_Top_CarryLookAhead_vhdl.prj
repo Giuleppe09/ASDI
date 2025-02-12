@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CarryLookAhead.srcs/sources_1/new/CarryLookAhead.vhd" \
+"../../../../CarryLookAhead.srcs/sources_1/new/Full_Adder.vhd" \
+"../../../../CarryLookAhead.srcs/sources_1/new/GenProp.vhd" \
+"../../../../CarryLookAhead.srcs/sources_1/new/Top_CarryLookAhead.vhd" \
+"../../../../CarryLookAhead.srcs/sim_1/new/tb.vhd" \
+
+# Do not sort compile order
+nosort

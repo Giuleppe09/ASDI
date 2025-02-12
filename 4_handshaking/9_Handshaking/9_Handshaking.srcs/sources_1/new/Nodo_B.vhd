@@ -51,16 +51,13 @@ architecture Structural of Nodo_B is
         );
     end component;
     
-    component RCA_Nbit is
-        generic (N: natural range 0 to 32 := 4); -- sto definendo un parametro
-        port(
-            OP_A_RCA: in std_logic_vector(N-1 downto 0);
-            OP_B_RCA: in std_logic_vector(N-1 downto 0);
-            CIN_RCA: in std_logic; -- 0
-            
-            S_RCA: out std_logic_vector(N-1 downto 0);
-            COUT_RCA: out std_logic;
-            OV: out std_logic
+    component Top_CarryLookAhead is
+        generic (N: integer);
+        Port(
+            x,y: in std_logic_vector(N-1 downto 0);
+            c_in: in std_logic; --Eventuale riporto entrante
+            S: out std_logic_vector(N-1 downto 0);
+            c_out: out std_logic --eventuale riporto extra
         );
 	end component;
 	
@@ -106,17 +103,17 @@ begin
     
    
     
-    ADDER: RCA_Nbit port map( -- Da cambiare con il carry look ahead
-            OP_A_RCA => BUS_in,
-            OP_B_RCA => temp_Y,
-            CIN_RCA => '0',
-            
-            S_RCA => temp_S,
-            COUT_RCA => temp_cout,
-            OV => temp_ov
+    ADDER: Top_CarryLookAhead  -- Da cambiare con il carry look ahead
+        generic map (N =>4)
+        Port map(
+            x => BUS_in,
+            y => temp_Y,
+            c_in => '0',--Riporto entrante
+            S => temp_S,
+            c_out => temp_cout -- Just for fun
         );
-    
-    
+      
+       
     output <= temp_Y;
     write <= temp_write;
     

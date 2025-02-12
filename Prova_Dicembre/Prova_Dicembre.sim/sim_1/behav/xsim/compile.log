@@ -1,6 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Componenti_Fondamentali/CARRY_LOOKAHEA/CarryLookAhead/CarryLookAhead.srcs/sources_1/new/CarryLookAhead.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CarryLookAhead'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Componenti_Fondamentali/CARRY_LOOKAHEA/CarryLookAhead/CarryLookAhead.srcs/sources_1/new/Full_Adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'full_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Componenti_Fondamentali/CARRY_LOOKAHEA/CarryLookAhead/CarryLookAhead.srcs/sources_1/new/GenProp.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'GenProp'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Handshaking_top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'Handshaking'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/cu_A.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'cu_A'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Prova_Dicembre/Prova_Dicembre.srcs/sim_1/new/tb_handshake.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Handshaking_TB'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_B.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_B'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Componenti_Fondamentali/CARRY_LOOKAHEA/CarryLookAhead/CarryLookAhead.srcs/sources_1/new/Top_CarryLookAhead.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Top_CarryLookAhead'

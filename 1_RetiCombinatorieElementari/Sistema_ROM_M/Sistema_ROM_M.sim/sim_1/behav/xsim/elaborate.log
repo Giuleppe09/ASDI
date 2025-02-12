@@ -1,0 +1,21 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_Sistema_ROM_M_behav xil_defaultlib.TB_Sistema_ROM_M -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture dataflow of entity xil_defaultlib.myFA [myfa_default]
+Compiling architecture dataflow of entity xil_defaultlib.RCA_Nbit [rca_nbit_default]
+Compiling architecture sistema of entity xil_defaultlib.Sistema_ROM_M [sistema_rom_m_default]
+Compiling architecture tb of entity xil_defaultlib.tb_sistema_rom_m
+Built simulation snapshot TB_Sistema_ROM_M_behav

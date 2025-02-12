@@ -7,10 +7,13 @@ entity Nodo_A is
         RST   : in  std_logic;
         START : in  std_logic; -- esterno
         
-        --Per HandShaking
-        ACK   : in  std_logic;
-        REQ   : out std_logic;
-        BUS_out: out std_logic_vector(3 downto 0)  := (others => '0') ;
+        --Per HandShaking       
+        REQ_in: in std_logic;
+        REQ_out   : out std_logic;
+        ACK_out: out std_logic;
+        ACK_in  : in  std_logic;
+        
+        BUS_out: out std_logic_vector(7 downto 0)  := (others => '0') ;
         -- Per Debug
         stato: out std_logic_vector(2 downto 0);
         read: out std_logic
@@ -26,9 +29,15 @@ architecture Structural of Nodo_A is
         CLK: in std_logic;
         RST: in std_logic;
         
+        ris: in std_logic; --Uscita comparatore
+        
+        
         --Segnali Per Handshaking completo
         REQ_out: out std_logic;
-        ACK_in: in std_logic; 
+        REQ_in: in std_logic;
+        ACK_in: in std_logic;
+        ACK_out: out std_logic; 
+        
         
         --Segnali interni all'entità 
         count_in: in std_logic_vector(2 downto 0); -- Deve entrare nel counter (sistema disegno)
