@@ -1,2 +1,22 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/13_ROBERTSON_SIM/13_ROBERTSON_SIM/13_ROBERTSON_SIM.srcs/sources_1/imports/new/molt_rob.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/adder_sub.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder_sub'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/cont_mod8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cont_mod8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/full_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'full_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/molt_rob.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'molt_booth'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/mux_21.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'mux_21'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/registro8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'registro8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/ripple_carry.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ripple_carry'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/shift_register.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'shift_register'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/unita_controllo.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'unita_controllo'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sources_1/imports/new/unita_operativa.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'unita_operativa'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.srcs/sim_1/new/tb_molt_booth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_molt_booth'

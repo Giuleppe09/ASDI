@@ -1,1 +1,0 @@
---incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TB_Nodo_B_behav" "xil_defaultlib.TB_Nodo_B" -log "elaborate.log" 

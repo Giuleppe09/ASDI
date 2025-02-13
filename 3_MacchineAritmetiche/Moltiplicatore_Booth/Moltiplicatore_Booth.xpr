@@ -4,12 +4,12 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="63" Path="C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/7_Moltiplicatore_Booth/.Xil/Vivado-30408-MadamImAdam/PrjAr/_X_/Moltiplicatore_Booth.xpr">
+<Project Product="Vivado" Version="7" Minor="63" Path="C:/Users/umber/OneDrive/Desktop/p_asdi/3_MacchineAritmetiche/Moltiplicatore_Booth/Moltiplicatore_Booth.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="409fc15dc60243f18264323990d37564"/>
     <Option Name="Part" Val="xc7a100tcsg324-1"/>
-    <Option Name="CompiledLibDir" Val="C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/7_Moltiplicatore_Booth/.Xil/Vivado-30408-MadamImAdam/PrjAr/_X_/Moltiplicatore_Booth.cache/compile_simlib"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
     <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
@@ -60,7 +60,7 @@
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSABoardId" Val="nexys-a7-100t"/>
-    <Option Name="WTXSimLaunchSim" Val="84"/>
+    <Option Name="WTXSimLaunchSim" Val="85"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>

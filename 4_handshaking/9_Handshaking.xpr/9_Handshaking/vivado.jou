@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Feb 13 11:59:06 2025
+# Process ID: 24500
+# Current directory: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/9_Handshaking
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12904 C:\Users\ladyc\Desktop\ASDI\Progetto_ASDI\9_Handshaking\9_Handshaking.xpr
+# Log file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/9_Handshaking/vivado.log
+# Journal file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/9_Handshaking\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/9_Handshaking/9_Handshaking.xpr
+update_compile_order -fileset sources_1
+archive_project C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/9_Handshaking.xpr.zip -temp_dir C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/9_Handshaking/.Xil/Vivado-24500-MadamImAdam -force -include_local_ip_cache

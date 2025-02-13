@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sources_1/new/Handshaking_top.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Handshaking'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/ladyc/Desktop/ASDI/9_Handshaking/9_Handshaking.srcs/sim_1/new/Handshaking_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Handshaking_tb'
