@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.runs/synth_1'
+HD_PWD='C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

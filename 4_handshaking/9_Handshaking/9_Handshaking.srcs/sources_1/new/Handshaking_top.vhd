@@ -1,45 +1,36 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Handshaking is
-    Port (  
-            CLK   : in  std_logic;
-            RST   : in  std_logic;
-            START : in  std_logic;
-            INVIO : in  std_logic;
-            
-            output  : out std_logic_vector(3 downto 0);
-            -- per debug
-            ACK_A   : out std_logic;
-            REQ_A   : out std_logic;
-            REQ_B   : out std_logic;
-            ACK_B   : out std_logic;
-            BUS_dato: out std_logic_vector(3 downto 0);
-            stato_A : out std_logic_vector(2 downto 0);
-            stato_B : out std_logic_vector(1 downto 0)
-        );
-end Handshaking;
+entity Top_Module is
+    Port (
+        CLK   : in  std_logic;
+        RST   : in  std_logic;
+        START : in  std_logic;
+        
+        -- Output di debug
+        BUS_OUT   : out std_logic_vector(3 downto 0);
+        REQ_OUT   : out std_logic;
+        ACK_OUT   : out std_logic;
+        STATO_A   : out std_logic_vector(2 downto 0);
+        STATO_B   : out std_logic_vector(1 downto 0)
+    );
+end Top_Module;
 
-architecture Structural of Handshaking is
-
+architecture Structural of Top_Module is
+    
+    -- Componenti Nodo_A e Nodo_B
     component Nodo_A is
         Port (  
             CLK   : in  std_logic;
             RST   : in  std_logic;
             START : in  std_logic;
-            
-            -- Per handshaking
-            ACK_in  : in  std_logic;
-            REQ_out : out std_logic;
-            ACK_out : out std_logic;
-            REQ_in  : in  std_logic;
-            BUS_out : out std_logic_vector(3 downto 0);
-            BUS_in  : in  std_logic_vector(3 downto 0);
-            
-            -- per debug
-            stato  : out std_logic_vector(2 downto 0);
-            write  : out std_logic;
-            output : out std_logic_vector(3 downto 0)
+            REQ_out   : out std_logic;
+            ACK_in    : in  std_logic;
+            BUS_out   : out std_logic_vector(3 downto 0);
+            stato     : out std_logic_vector(2 downto 0);
+            REQ_debug : out std_logic;
+            ACK_debug : out std_logic;
+            BUS_debug : out std_logic_vector(3 downto 0)
         );
     end component;
     
@@ -47,79 +38,55 @@ architecture Structural of Handshaking is
         Port (  
             CLK   : in  std_logic;
             RST   : in  std_logic;
-            INVIO : in  std_logic;
-           
-            -- Per handshaking
-            ACK_in  : in  std_logic;
-            REQ_out : out std_logic;
-            ACK_out : out std_logic;
-            REQ_in  : in  std_logic;
-            BUS_out : out std_logic_vector(3 downto 0);
-            BUS_in  : in  std_logic_vector(3 downto 0);
-            
-            -- Per debug
-            stato  : out std_logic_vector(1 downto 0);
-            write_B: out std_logic;
-            read_B : out std_logic
+            REQ   : in  std_logic;
+            ACK   : out std_logic;
+            BUS_in : in std_logic_vector(3 downto 0);
+            output : out std_logic_vector(3 downto 0);
+            write  : out std_logic;
+            stato  : out std_logic_vector(1 downto 0)
         );
     end component;
     
-    -- Segnali interni per il protocollo handshaking
-    signal temp_REQ_AtoB: std_logic;
-    signal temp_ACK_BtoA: std_logic;
-    signal temp_REQ_BtoA: std_logic;
-    signal temp_ACK_AtoB: std_logic;
-    signal temp_BUS_AtoB: std_logic_vector(3 downto 0);
-    signal temp_BUS_BtoA: std_logic_vector(3 downto 0);
-    -- Segnali di debug
-    signal temp_write_A: std_logic;
-    signal temp_read_B : std_logic;
-    signal temp_write_B: std_logic;
+    -- Segnali interni
+    signal sig_REQ : std_logic;
+    signal sig_ACK : std_logic;
+    signal sig_BUS : std_logic_vector(3 downto 0);
+    signal sig_STATO_A : std_logic_vector(2 downto 0);
+    signal sig_STATO_B : std_logic_vector(1 downto 0);
     
 begin
-
-    A: Nodo_A port map(  
-            CLK   => CLK,
-            RST   => RST,
-            START => START,
-            
-            -- Per handshaking
-            ACK_in  => temp_ACK_BtoA,
-            REQ_out => temp_REQ_AtoB,
-            ACK_out => temp_ACK_AtoB,
-            REQ_in  => temp_REQ_BtoA,
-            BUS_out => temp_BUS_AtoB,
-            BUS_in  => temp_BUS_BtoA,
-            
-            -- Per debug
-            stato  => stato_A,
-            output => output
-        );
     
-    B: Nodo_B port map(  
-            CLK   => CLK,
-            RST   => RST,
-            INVIO => INVIO,
-           
-            -- Per handshaking
-            ACK_in  => temp_ACK_AtoB,
-            REQ_out => temp_REQ_BtoA,
-            ACK_out => temp_ACK_BtoA,
-            REQ_in  => temp_REQ_AtoB,
-            BUS_out => temp_BUS_BtoA,
-            BUS_in  => temp_BUS_AtoB,
-            
-            -- Per debug
-            stato   => stato_B,
-            write_B => temp_write_B,
-            read_B  => temp_read_B
-        );
+    -- Instanza di Nodo_A
+    U1: Nodo_A port map(
+        CLK       => CLK,
+        RST       => RST,
+        START     => START,
+        REQ_out   => sig_REQ,
+        ACK_in    => sig_ACK,
+        BUS_out   => sig_BUS,
+        stato     => sig_STATO_A,
+        REQ_debug => open,
+        ACK_debug => open,
+        BUS_debug => open
+    );
     
-    -- Collegamento segnali di debug
-    BUS_dato <= temp_BUS_AtoB; 
-    ACK_A    <= temp_ACK_AtoB;
-    REQ_A    <= temp_REQ_AtoB;
-    ACK_B    <= temp_ACK_BtoA;
-    REQ_B    <= temp_REQ_BtoA;
+    -- Instanza di Nodo_B
+    U2: Nodo_B port map(
+        CLK    => CLK,
+        RST    => RST,
+        REQ    => sig_REQ,
+        ACK    => sig_ACK,
+        BUS_in => sig_BUS,
+        output => open,
+        write  => open,
+        stato  => sig_STATO_B
+    );
+    
+    -- Assegnazione segnali di output
+    BUS_OUT <= sig_BUS;
+    REQ_OUT <= sig_REQ;
+    ACK_OUT <= sig_ACK;
+    STATO_A <= sig_STATO_A;
+    STATO_B <= sig_STATO_B;
     
 end Structural;

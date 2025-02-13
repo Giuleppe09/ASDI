@@ -1,12 +1,19 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Componenti_Fondamentali/CARRY_LOOKAHEA/CarryLookAhead/CarryLookAhead.srcs/sources_1/new/CarryLookAhead.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'CarryLookAhead'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Componenti_Fondamentali/CARRY_LOOKAHEA/CarryLookAhead/CarryLookAhead.srcs/sources_1/new/Full_Adder.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'full_adder'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Componenti_Fondamentali/CARRY_LOOKAHEA/CarryLookAhead/CarryLookAhead.srcs/sources_1/new/GenProp.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'GenProp'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Handshaking_top.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Handshaking'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_B.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Nodo_B'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/Componenti_Fondamentali/CARRY_LOOKAHEA/CarryLookAhead/CarryLookAhead.srcs/sources_1/new/Top_CarryLookAhead.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Top_CarryLookAhead'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Nodo_A'
+ERROR: [VRFC 10-4982] syntax error near ')' [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:20]
+ERROR: [VRFC 10-2935] 'clk' is already declared in this region [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:27]
+ERROR: [VRFC 10-2935] 'rst' is already declared in this region [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:28]
+ERROR: [VRFC 10-2935] 'req_out' is already declared in this region [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:31]
+ERROR: [VRFC 10-2935] 'ack_in' is already declared in this region [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:32]
+ERROR: [VRFC 10-2935] 'stato' is already declared in this region [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:41]
+ERROR: [VRFC 10-4982] syntax error near 'component' [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:45]
+ERROR: [VRFC 10-2989] 'cu_a' is not declared [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:76]
+ERROR: [VRFC 10-2989] 'cont_mod8' is not declared [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:93]
+ERROR: [VRFC 10-2989] 'rom' is not declared [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:101]
+ERROR: [VRFC 10-2989] 'req_debug' is not declared [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:109]
+ERROR: [VRFC 10-2989] 'ack_debug' is not declared [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:110]
+ERROR: [VRFC 10-8533] signal assignments are not allowed inside an entity declaration statement [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:111]
+ERROR: [VRFC 10-2989] 'bus_debug' is not declared [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:112]
+ERROR: [VRFC 10-9165] mismatch on label; expected 'nodo_a' [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:114]
+ERROR: [VRFC 10-9458] unit 'nodo_a' is ignored due to previous errors [C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd:4]
+INFO: [VRFC 10-8704] VHDL file 'C:/Users/umber/OneDrive/Desktop/p_asdi/4_handshaking/9_Handshaking/9_Handshaking.srcs/sources_1/new/Nodo_A.vhd' is ignored due to errors

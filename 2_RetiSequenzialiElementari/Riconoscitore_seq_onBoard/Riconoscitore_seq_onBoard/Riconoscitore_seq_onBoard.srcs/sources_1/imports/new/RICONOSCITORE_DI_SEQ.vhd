@@ -21,7 +21,6 @@ architecture Behavioral of RICONOSCITORE_DI_SEQ is
     signal temp_Y: std_logic;
 
 begin
-
     -- Processo combinatorio: determinazione del prossimo stato e delle uscite
     process(stato_corrente, i, M, RST, i_read, m_read)
     begin

@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.runs/impl_1'
+HD_PWD='C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log Riconoscitore_onBoard.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Riconoscitore_onBoard.tcl -notrace
 
 

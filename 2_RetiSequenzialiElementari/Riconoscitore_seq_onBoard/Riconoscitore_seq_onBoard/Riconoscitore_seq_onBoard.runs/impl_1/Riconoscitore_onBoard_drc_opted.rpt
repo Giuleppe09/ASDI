@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Thu Jan 30 17:12:45 2025
-| Host         : MadamImAdam running 64-bit major release  (build 9200)
+| Date         : Thu Feb 13 11:21:43 2025
+| Host         : LAPTOP-AOM7HOQR running 64-bit major release  (build 9200)
 | Command      : report_drc -file Riconoscitore_onBoard_drc_opted.rpt -pb Riconoscitore_onBoard_drc_opted.pb -rpx Riconoscitore_onBoard_drc_opted.rpx
 | Design       : Riconoscitore_onBoard
 | Device       : xc7a100tcsg324-1

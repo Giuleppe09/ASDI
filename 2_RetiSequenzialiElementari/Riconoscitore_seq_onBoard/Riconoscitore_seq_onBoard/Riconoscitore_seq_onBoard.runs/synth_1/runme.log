@@ -14,93 +14,86 @@ ECHO disattivato.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source Riconoscitore_onBoard.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 496.395 ; gain = 222.379
-Command: read_checkpoint -auto_incremental -incremental C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/utils_1/imports/synth_1/Riconoscitore_onBoard.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/utils_1/imports/synth_1/Riconoscitore_onBoard.dcp for incremental synthesis
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 460.066 ; gain = 199.660
+Command: read_checkpoint -auto_incremental -incremental C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/utils_1/imports/synth_1/Riconoscitore_onBoard.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/utils_1/imports/synth_1/Riconoscitore_onBoard.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top Riconoscitore_onBoard -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9832
+INFO: [Synth 8-7075] Helper process launched with PID 9564
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1323.434 ; gain = 409.113
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1291.609 ; gain = 411.891
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Riconoscitore_onBoard' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'Riconoscitore_onBoard' [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:17]
 	Parameter CLK_period bound to: 10 - type: integer 
 	Parameter btn_noise_time bound to: 10000000 - type: integer 
-INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:34' bound to instance 'deb_i' of component 'ButtonDebouncer' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:53]
-INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:46]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:34' bound to instance 'deb_i' of component 'ButtonDebouncer' [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'ButtonDebouncer' [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:46]
 	Parameter CLK_period bound to: 10 - type: integer 
 	Parameter btn_noise_time bound to: 10000000 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:79]
-INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (0#1) [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:46]
+INFO: [Synth 8-226] default block is never used [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'ButtonDebouncer' (0#1) [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:46]
 	Parameter CLK_period bound to: 10 - type: integer 
 	Parameter btn_noise_time bound to: 10000000 - type: integer 
-INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:34' bound to instance 'deb_m' of component 'ButtonDebouncer' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:65]
-INFO: [Synth 8-3491] module 'RICONOSCITORE_DI_SEQ' declared at 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd:34' bound to instance 'ric' of component 'RICONOSCITORE_DI_SEQ' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'RICONOSCITORE_DI_SEQ' [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'RICONOSCITORE_DI_SEQ' (0#1) [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'Riconoscitore_onBoard' (0#1) [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:17]
+INFO: [Synth 8-3491] module 'ButtonDebouncer' declared at 'C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/ButtonDebouncer.vhd:34' bound to instance 'deb_m' of component 'ButtonDebouncer' [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:65]
+INFO: [Synth 8-3491] module 'RICONOSCITORE_DI_SEQ' declared at 'C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd:4' bound to instance 'ric' of component 'RICONOSCITORE_DI_SEQ' [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'RICONOSCITORE_DI_SEQ' [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'RICONOSCITORE_DI_SEQ' (0#1) [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'Riconoscitore_onBoard' (0#1) [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/new/Riconoscitore_onBoard.vhd:17]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1413.258 ; gain = 498.938
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1382.234 ; gain = 502.516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1413.258 ; gain = 498.938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1382.234 ; gain = 502.516
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1413.258 ; gain = 498.938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1382.234 ; gain = 502.516
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1413.258 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1382.234 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
-Finished Parsing XDC File [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Riconoscitore_onBoard_propImpl.xdc].
+Parsing XDC File [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Riconoscitore_onBoard_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Riconoscitore_onBoard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1468.527 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1494.770 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1468.527 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.770 ; gain = 580.449
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Preparing Guide Design
----------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/utils_1/imports/synth_1/Riconoscitore_onBoard.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.770 ; gain = 580.449
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'BTN_state_reg' in module 'ButtonDebouncer'
-INFO: [Synth 8-802] inferred FSM for state register 'stato_corrente_reg' in module 'RICONOSCITORE_DI_SEQ'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -110,33 +103,11 @@ INFO: [Synth 8-802] inferred FSM for state register 'stato_corrente_reg' in modu
          chk_not_pressed |                               11 |                               11
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'BTN_state_reg' using encoding 'sequential' in module 'ButtonDebouncer'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                      s0 |                        000000001 |                             0000
-                      s1 |                        000000010 |                             0001
-                      s2 |                        000000100 |                             0010
-                      s3 |                        000001000 |                             0011
-                      s4 |                        000010000 |                             0100
-                      s5 |                        000100000 |                             0101
-                      s6 |                        001000000 |                             0110
-                      s7 |                        010000000 |                             0111
-                      s8 |                        100000000 |                             1000
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'stato_corrente_reg' using encoding 'one-hot' in module 'RICONOSCITORE_DI_SEQ'
+WARNING: [Synth 8-327] inferring latch for variable 'temp_Y_reg' [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd:29]
+WARNING: [Synth 8-327] inferring latch for variable 'stato_corrente_reg' [C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.srcs/sources_1/imports/new/RICONOSCITORE_DI_SEQ.vhd:28]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : 
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -145,17 +116,16 @@ Detailed RTL Component Info :
 	   2 Input   32 Bit       Adders := 2     
 +---Registers : 
 	               32 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input   32 Bit        Muxes := 2     
-	   9 Input    9 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 5     
-	   9 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
 	   4 Input    2 Bit        Muxes := 2     
 	   2 Input    2 Bit        Muxes := 12    
 	   4 Input    1 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 2     
-	   9 Input    1 Bit        Muxes := 1     
+	  10 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -173,25 +143,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -209,37 +179,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -257,38 +227,40 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |CARRY4 |    16|
-|3     |LUT2   |     8|
-|4     |LUT3   |     6|
-|5     |LUT4   |    14|
-|6     |LUT5   |     5|
-|7     |LUT6   |    12|
-|8     |FDRE   |    79|
-|9     |FDSE   |     1|
-|10    |IBUF   |     6|
-|11    |OBUF   |     5|
+|3     |LUT2   |     7|
+|4     |LUT3   |     3|
+|5     |LUT4   |    11|
+|6     |LUT5   |     7|
+|7     |LUT6   |    17|
+|8     |FDRE   |    70|
+|9     |LD     |     4|
+|10    |LDC    |     1|
+|11    |IBUF   |     6|
+|12    |OBUF   |     5|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.527 ; gain = 588.809
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1494.770 ; gain = 498.938
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1494.770 ; gain = 580.449
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:31 . Memory (MB): peak = 1468.527 ; gain = 502.516
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1468.527 ; gain = 588.809
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1494.770 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1468.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1468.527 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 5 instances were transformed.
+  LD => LDCE: 4 instances
+  LDC => LDCE: 1 instance 
 
-Synth Design complete | Checksum: 2298221c
+Synth Design complete | Checksum: d6c6cb69
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+33 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1494.770 ; gain = 974.473
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.runs/synth_1/Riconoscitore_onBoard.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1468.527 ; gain = 983.605
+INFO: [Common 17-1381] The checkpoint 'C:/Users/umber/OneDrive/Desktop/p_asdi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.runs/synth_1/Riconoscitore_onBoard.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Riconoscitore_onBoard_utilization_synth.rpt -pb Riconoscitore_onBoard_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 30 17:12:14 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 13 11:20:59 2025...

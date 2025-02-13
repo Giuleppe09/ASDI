@@ -34,7 +34,7 @@ architecture Structural of Riconoscitore_onBoard is
         port(
             i: in std_logic; --ingresso
             i_read: in std_logic;--permesso di leggere l'ingresso
-            RST,CLK: in std_logic; 
+            RST: in std_logic; 
             M: in std_logic; --modo
             m_read: in std_logic;--permesso di leggere il modo
             Y: out std_logic; --uscita
@@ -78,7 +78,6 @@ begin
         i => i,
         i_read => cleared_i_read,
         RST => RST,
-        CLK => CLK, 
         M => M,
         m_read => cleared_m_read,
         Y => LED,

@@ -31,8 +31,6 @@ architecture Structural of Nodo_B is
             REQ_in: in std_logic;
             ACK_out: out std_logic; 
             
-           
-            
             write: out std_logic; --Da dare al registro accumulatore
             --per debug
             stato: out std_logic_vector(1 downto 0)

@@ -3,91 +3,91 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity Handshaking_TB is
-end Handshaking_TB;
+entity Top_Module_tb is
+end Top_Module_tb;
 
-architecture TB of Handshaking_TB is
-    
-    -- Component to be tested
-    component Handshaking
+architecture behavior of Top_Module_tb is
+
+    -- Dichiarazione dei segnali per il testbench
+    signal CLK      : std_logic := '0';
+    signal RST      : std_logic := '0';
+    signal START    : std_logic := '0';
+    signal BUS_OUT  : std_logic_vector(3 downto 0);
+    signal REQ_OUT  : std_logic;
+    signal ACK_OUT  : std_logic;
+    signal STATO_A  : std_logic_vector(2 downto 0);
+    signal STATO_B  : std_logic_vector(1 downto 0);
+
+    -- Instanza del Top_Module
+    component Top_Module is
         Port (
             CLK   : in  std_logic;
             RST   : in  std_logic;
             START : in  std_logic;
-            output: out std_logic_vector(3 downto 0);
-            ACK   : out std_logic;
-            REQ   : out std_logic;
-            BUS_dato: out std_logic_vector(3 downto 0);
-            stato_A: out std_logic_vector(2 downto 0);
-            stato_B: out std_logic_vector(1 downto 0)
+            BUS_OUT   : out std_logic_vector(3 downto 0);
+            REQ_OUT   : out std_logic;
+            ACK_OUT   : out std_logic;
+            STATO_A   : out std_logic_vector(2 downto 0);
+            STATO_B   : out std_logic_vector(1 downto 0)
         );
     end component;
-    
-    -- Testbench signals
-    signal CLK   : std_logic := '0';
-    signal RST   : std_logic := '1';
-    signal START : std_logic := '0';
-    signal output_tb : std_logic_vector(3 downto 0);
-    signal ACK_tb   : std_logic;
-    signal REQ_tb   : std_logic;
-    signal BUS_dato_tb: std_logic_vector(3 downto 0);
-    signal stato_A_tb: std_logic_vector(2 downto 0);
-    signal stato_B_tb: std_logic_vector(1 downto 0);
-    
-    -- Clock process (50 MHz -> periodo 20ns)
-    constant CLK_period : time := 20 ns;
-    
-    begin
-    
-    -- Instantiate DUT (Device Under Test)
-    UUT: Handshaking
-        port map (
-            CLK   => CLK,
-            RST   => RST,
-            START => START,
-            output => output_tb,
-            ACK   => ACK_tb,
-            REQ   => REQ_tb,
-            BUS_dato => BUS_dato_tb,
-            stato_A => stato_A_tb,
-            stato_B => stato_B_tb
-        );
 
-    -- Clock generation
-    CLK_process: process
+begin
+
+    -- Istanza del Top_Module
+    uut: Top_Module port map (
+        CLK     => CLK,
+        RST     => RST,
+        START   => START,
+        BUS_OUT => BUS_OUT,
+        REQ_OUT => REQ_OUT,
+        ACK_OUT => ACK_OUT,
+        STATO_A => STATO_A,
+        STATO_B => STATO_B
+    );
+
+    -- Generazione del clock
+    CLK_process : process
     begin
-        while true loop
-            CLK <= '0';
-            wait for CLK_period/2;
-            CLK <= '1';
-            wait for CLK_period/2;
-        end loop;
+        CLK <= '0';
+        wait for 10 ns;
+        CLK <= '1';
+        wait for 10 ns;
     end process;
-    
-    -- Stimulus process
-    Stimulus: process
+
+    -- Stimoli per il test
+    stimulus_process : process
     begin
-        -- Reset the system
-        RST <= '1';
-        START <= '0';
-        wait for 40 ns;
-        RST <= '0';
+        -- Inizializzazione
+        RST <= '1'; 
+        START <= '0'; 
         wait for 20 ns;
         
-        -- First transaction
+        -- Reset del sistema
+        RST <= '0'; 
+        wait for 20 ns;
+
+        -- Applicazione dello start
         START <= '1';
-        wait for 40 ns;
+        wait for 20 ns;
         START <= '0';
+        wait for 20 ns;
+
+        -- Verifica dell'uscita
+        assert (BUS_OUT = "0000") report "Errore: BUS_OUT non è corretto" severity error;
+        assert (REQ_OUT = '0') report "Errore: REQ_OUT non è corretto" severity error;
+        assert (ACK_OUT = '0') report "Errore: ACK_OUT non è corretto" severity error;
+        assert (STATO_A = "000") report "Errore: STATO_A non è corretto" severity error;
+        assert (STATO_B = "00") report "Errore: STATO_B non è corretto" severity error;
+
+        -- Test di comportamento
+        wait for 20 ns;
+        -- Altri stimoli possono essere aggiunti per testare diversi comportamenti
+
+        -- Terminazione della simulazione
         wait for 100 ns;
-        
-        -- Second transaction
-        START <= '1';
-        wait for 40 ns;
-        START <= '0';
-        wait for 200 ns;
-        
-        -- Finish simulation
-        wait;
+        assert false report "Fine simulazione" severity failure;
+
     end process;
-    
-end TB;
+
+end behavior;

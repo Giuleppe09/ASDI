@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Feb  3 12:37:34 2025
+# Process ID: 5708
+# Current directory: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7372 C:\Users\umber\OneDrive\Desktop\AsDi\2_RetiSequenzialiElementari\Riconoscitore_seq_onBoard\Riconoscitore_seq_onBoard\Riconoscitore_seq_onBoard.xpr
+# Log file: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/vivado.log
+# Journal file: C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard\vivado.jou
+# Running On: LAPTOP-AOM7HOQR, OS: Windows, CPU Frequency: 1190 MHz, CPU Physical cores: 2, Host memory: 8316 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/umber/OneDrive/Desktop/AsDi/2_RetiSequenzialiElementari/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard/Riconoscitore_seq_onBoard.xpr
+update_compile_order -fileset sources_1

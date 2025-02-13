@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Thu Jan 30 17:12:47 2025
-| Host         : MadamImAdam running 64-bit major release  (build 9200)
+| Date         : Thu Feb 13 11:21:47 2025
+| Host         : LAPTOP-AOM7HOQR running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Riconoscitore_onBoard_control_sets_placed.rpt
 | Design       : Riconoscitore_onBoard
 | Device       : xc7a100t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     5 |
-|    Minimum number of control sets                        |     5 |
+| Total control sets                                       |     6 |
+|    Minimum number of control sets                        |     6 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    15 |
+| Unused register locations in slices containing registers |    21 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,12 +39,12 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     5 |
-| >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     0 |
+| Total control sets |     6 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     1 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
-| >= 10 to < 12      |     1 |
+| >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
 | >= 16              |     2 |
@@ -58,26 +58,27 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | No                     |               6 |            3 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |               6 |            2 |
+| No           | Yes                   | No                     |               7 |            3 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              73 |           18 |
+| Yes          | Yes                   | No                     |              62 |           16 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
-|  Clock Signal  |          Enable Signal         |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
-|  CLK_IBUF_BUFG |                                |                                |                2 |              2 |         1.00 |
-|  CLK_IBUF_BUFG |                                | RST_IBUF                       |                2 |              6 |         3.00 |
-|  CLK_IBUF_BUFG | deb_m/E[0]                     | RST_IBUF                       |                2 |             11 |         5.50 |
-|  CLK_IBUF_BUFG | deb_i/deb.count[31]_i_2_n_0    | deb_i/deb.count[31]_i_1_n_0    |                8 |             31 |         3.88 |
-|  CLK_IBUF_BUFG | deb_m/deb.count[31]_i_2__0_n_0 | deb_m/deb.count[31]_i_1__0_n_0 |                8 |             31 |         3.88 |
-+----------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
++------------------------------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
+|            Clock Signal            |          Enable Signal         |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++------------------------------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
+|  ric/temp_Y_reg_i_2_n_0            |                                | RST_IBUF                       |                1 |              1 |         1.00 |
+|  CLK_IBUF_BUFG                     |                                |                                |                2 |              2 |         1.00 |
+|  ric/stato_corrente_reg[3]_i_2_n_0 |                                |                                |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG                     |                                | RST_IBUF                       |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG                     | deb_i/deb.count[31]_i_2_n_0    | deb_i/deb.count[31]_i_1_n_0    |                8 |             31 |         3.88 |
+|  CLK_IBUF_BUFG                     | deb_m/deb.count[31]_i_2__0_n_0 | deb_m/deb.count[31]_i_1__0_n_0 |                8 |             31 |         3.88 |
++------------------------------------+--------------------------------+--------------------------------+------------------+----------------+--------------+
 
 

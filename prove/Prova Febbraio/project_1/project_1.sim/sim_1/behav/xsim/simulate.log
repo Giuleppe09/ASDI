@@ -1,4 +1,0 @@
-Time resolution is 1 ps
-Failure: Test completo!
-Time: 260 ns  Iteration: 0  Process: /tb_cu_A/line__79  File: C:/Users/umber/OneDrive/Desktop/p_asdi/prove/Prova Febbraio/project_1/project_1.srcs/sim_1/new/tb_CU_A.vhd
-$finish called at time : 260 ns : File "C:/Users/umber/OneDrive/Desktop/p_asdi/prove/Prova Febbraio/project_1/project_1.srcs/sim_1/new/tb_CU_A.vhd" Line 116
