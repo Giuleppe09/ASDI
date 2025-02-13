@@ -1,0 +1,5 @@
+Time resolution is 1 ps
+Note: Test 1: RESET iniziale
+Time: 0 ps  Iteration: 0  Process: /tb_sistemaPO_PC/stimulus_process  File: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd
+Note: Test 2: Attivazione START
+Time: 40 ns  Iteration: 0  Process: /tb_sistemaPO_PC/stimulus_process  File: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd

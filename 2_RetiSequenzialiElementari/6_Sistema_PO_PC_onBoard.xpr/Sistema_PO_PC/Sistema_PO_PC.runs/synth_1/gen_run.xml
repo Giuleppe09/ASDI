@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1738932291">
+  <File Type="PA-TCL" Name="sistemaPO_PC.tcl"/>
+  <File Type="REPORTS-TCL" Name="sistemaPO_PC_reports.tcl"/>
+  <File Type="RDS-RDS" Name="sistemaPO_PC.vds"/>
+  <File Type="RDS-UTIL" Name="sistemaPO_PC_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="sistemaPO_PC_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="sistemaPO_PC.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/new/ButtonDebouncer.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ButtonDebouncer.vhd"/>
+        <Attr Name="ImportTime" Val="1730116291"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Control_unit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Sistema_PO_PC.srcs/sources_1/new/Control_unit.vhd"/>
+        <Attr Name="ImportTime" Val="1738931242"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/FA.vhd"/>
+        <Attr Name="ImportTime" Val="1729778928"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/RCA_generate/RCA_generate.srcs/sources_1/imports/new/RCA_Nbit.vhd"/>
+        <Attr Name="ImportTime" Val="1738168652"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/imports/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ROM.vhd"/>
+        <Attr Name="ImportTime" Val="1738168691"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Progetto_ASDI/Contatore_cronometro/Contatore_cronometro.srcs/sources_1/new/contatore.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Contatore_cronometro/Contatore_cronometro.srcs/sources_1/new/contatore.vhd"/>
+        <Attr Name="ImportTime" Val="1738061014"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Progetto_ASDI/Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/new/Sistema_ROM_M.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Sistema_ROM_M_onBoard/Sistema_ROM_M_onBoard.srcs/sources_1/new/Sistema_ROM_M.vhd"/>
+        <Attr Name="ImportTime" Val="1738168752"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Progetto_ASDI/Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../Cronometro_onDisplay/Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd"/>
+        <Attr Name="ImportTime" Val="1738315296"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Sistema_PO_PC.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Sistema_PO_PC.srcs/sources_1/new/Sistema_PO_PC.vhd"/>
+        <Attr Name="ImportTime" Val="1738932271"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="sistemaPO_PC"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/digilent-xdc-master/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../../../../Downloads/digilent-xdc-master/digilent-xdc-master/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1738932164"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

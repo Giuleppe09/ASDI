@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Fri Feb  7 13:46:05 2025
+| Host         : MadamImAdam running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file sistemaPO_PC_control_sets_placed.rpt
+| Design       : sistemaPO_PC
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    78 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |    18 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              11 |            5 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              99 |           29 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------+---------------------------+------------------+----------------+--------------+
+|  Clock Signal  |                   Enable Signal                  |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+--------------------------------------------------+---------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG |                                                  |                           |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | unita_controllo/Q[3]                             | unita_controllo/Q[0]      |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/E[0]                                   | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3][0]    | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_10[0] | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_0[0]  | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_1[0]  | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_13[0] | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_11[0] | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_8[0]  | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_3[0]  | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_6[0]  | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_9[0]  | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_7[0]  | reset_IBUF                |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_12[0] | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_4[0]  | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_2[0]  | reset_IBUF                |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | contatore/FSM_onehot_stato_corrente_reg[3]_5[0]  | reset_IBUF                |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG |                                                  | reset_IBUF                |                5 |             11 |         2.20 |
+|  clk_IBUF_BUFG | DEB/deb.count[31]_i_2_n_0                        | DEB/deb.count[31]_i_1_n_0 |                8 |             31 |         3.88 |
++----------------+--------------------------------------------------+---------------------------+------------------+----------------+--------------+
+
+

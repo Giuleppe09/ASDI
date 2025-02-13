@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Feb  7 13:46:54 2025
+# Process ID: 8500
+# Current directory: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.runs/impl_1
+# Command line: vivado.exe -log sistemaPO_PC.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sistemaPO_PC.tcl -notrace
+# Log file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.runs/impl_1/sistemaPO_PC.vdi
+# Journal file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.runs/impl_1\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
+#-----------------------------------------------------------
+source sistemaPO_PC.tcl -notrace

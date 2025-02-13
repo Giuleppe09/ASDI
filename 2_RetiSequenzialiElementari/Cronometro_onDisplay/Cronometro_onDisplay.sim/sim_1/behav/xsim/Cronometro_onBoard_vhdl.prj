@@ -1,0 +1,21 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_Visualizzazione.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/new/Blocco_di_acquisizione.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/new/ButtonDebouncer.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/new/Control_unit.vhd" \
+"../../../../../5_Cronometro/Cronometro.srcs/sources_1/imports/new/Frequency_div.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/anodes_manager.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/imports/new/cathodes_input_manager.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/cathodes_manager.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/new/clock_divider.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/new/contatore.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/imports/new/counter_mod8.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/new/cronometro.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/imports/Display7Seg - Vivado/display_seven_segments.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/new/encoder_display.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/imports/new/registro_switch.vhd" \
+"../../../../Cronometro_onDisplay.srcs/sources_1/new/Cronometro_onBoard.vhd" \
+
+# Do not sort compile order
+nosort

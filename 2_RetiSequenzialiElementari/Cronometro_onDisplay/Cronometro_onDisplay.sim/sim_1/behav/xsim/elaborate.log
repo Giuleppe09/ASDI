@@ -1,0 +1,34 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Cronometro_onBoard_behav xil_defaultlib.Cronometro_onBoard -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling architecture behavioral of entity xil_defaultlib.ButtonDebouncer [buttondebouncer_default]
+Compiling architecture behavioral of entity xil_defaultlib.Control_unit [control_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.registro_acq [\registro_acq(n=6)\]
+Compiling architecture behavioral of entity xil_defaultlib.registro_acq [\registro_acq(n=5)\]
+Compiling architecture structural of entity xil_defaultlib.Blocco_acquisizione [blocco_acquisizione_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_cronometro [clock_divider_cronometro_default]
+Compiling architecture behavioral of entity xil_defaultlib.Counter [\Counter(modulo=60,n=6)\]
+Compiling architecture behavioral of entity xil_defaultlib.Counter [\Counter(modulo=24,n=5)\]
+Compiling architecture structural of entity xil_defaultlib.cronometro [cronometro_default]
+Compiling architecture dataflow of entity xil_defaultlib.encoder_display [encoder_display_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider [\clock_divider(clkout_freq=500)\]
+Compiling architecture behavioral of entity xil_defaultlib.counter_mod8 [counter_mod8_default]
+Compiling architecture behavioral of entity xil_defaultlib.cathodes_input_manager [cathodes_input_manager_default]
+Compiling architecture behavioral of entity xil_defaultlib.cathodes_manager [cathodes_manager_default]
+Compiling architecture behavioral of entity xil_defaultlib.anodes_manager [anodes_manager_default]
+Compiling architecture structural of entity xil_defaultlib.display_seven_segments [display_seven_segments_default]
+Compiling architecture structural of entity xil_defaultlib.Blocco_Visualizzazione [blocco_visualizzazione_default]
+Compiling architecture structural of entity xil_defaultlib.cronometro_onboard
+Built simulation snapshot Cronometro_onBoard_behav

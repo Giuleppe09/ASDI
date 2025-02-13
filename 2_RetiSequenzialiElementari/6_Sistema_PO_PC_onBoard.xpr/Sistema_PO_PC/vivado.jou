@@ -1,0 +1,112 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Feb  7 12:32:56 2025
+# Process ID: 17772
+# Current directory: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29900 C:\Users\ladyc\Desktop\ASDI\Progetto_ASDI\Sistema_PO_PC\Sistema_PO_PC.xpr
+# Log file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/vivado.log
+# Journal file: C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC\vivado.jou
+# Running On: MadamImAdam, OS: Windows, CPU Frequency: 2995 MHz, CPU Physical cores: 16, Host memory: 33752 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source tb_sistemaPO_PC.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source sistemaPO_PC.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Control_unit [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source tb_Control_unit.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/tb_Sistema_PO_PC.vhd w ]
+add_files -fileset sim_1 C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/tb_Sistema_PO_PC.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_Sistema_PO_PC [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/Sistema_PO_PC_tb.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/Sistema_PO_PC_tb.vhd
+export_ip_user_files -of_objects  [get_files C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/tb_Sistema_PO_PC.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/tb_Sistema_PO_PC.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd w ]
+add_files -fileset sim_1 C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.srcs/sim_1/new/tb_Sistema.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source tb_sistemaPO_PC.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source tb_sistemaPO_PC.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source tb_sistemaPO_PC.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source tb_sistemaPO_PC.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source tb_sistemaPO_PC.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/tb_sistemaPO_PC_behav.wcfg
+source tb_sistemaPO_PC.tcl
+archive_project C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC_aggiornato.xpr.zip -temp_dir C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/.Xil/Vivado-17772-MadamImAdam -force -include_local_ip_cache
+add_files -norecurse C:/Users/ladyc/Desktop/ASDI/VIVADO-PROJECTS/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/new/ButtonDebouncer.vhd
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse C:/Users/ladyc/Downloads/digilent-xdc-master/digilent-xdc-master/Nexys-A7-100T-Master.xdc
+launch_runs impl_1 -jobs 11
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 11
+wait_on_run impl_1
+close_sim
+launch_runs impl_1 -to_step write_bitstream -jobs 11
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.runs/impl_1/sistemaPO_PC.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/Sistema_PO_PC.runs/impl_1/sistemaPO_PC.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+archive_project C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/6_Sistema_PO_PC_onBoard.xpr.zip -temp_dir C:/Users/ladyc/Desktop/ASDI/Progetto_ASDI/Sistema_PO_PC/.Xil/Vivado-17772-MadamImAdam -force -include_local_ip_cache
